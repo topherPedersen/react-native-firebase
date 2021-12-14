@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'com.google.firebase.appdistribution'
+
+import com.android.build.OutputFile
+
+project.ext.react = [
+    enableHermes: false,
+]
+
+// up to mono root
+apply from: '../../node_modules/react-native/react.gradle'
+
+/**
+ * The preferred build flavor of JavaScriptCore.
+ *
+ * For example, to use the international variant, you can use:
+ * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
+ *
+ * The international variant includes ICU i18n library and necessary data
+ * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
+ * give correct results when using with locales other than en-US.  Note that
+ * this variant is about 6MiB larger per architecture than default.
+ */
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+def enableSeparateBuildPerCPUArchitecture = false
+
+/**
+ * Use international variant JavaScriptCore
+ * International variant includes ICU i18n library and necessary data allowing to use
+ * e.g. Date.toLocaleString and String.localeCompare that give correct results
+ * when using with locales other than en-US.
+ * Note that this variant is about 6MiB larger per architecture than default.
+ */
+def useIntlJsc = false
+
+/**
+ * Architectures to build native code for in debug.
+ */
+def nativeArchitectures = project.getProperties().get('reactNativeDebugArchitectures')
+
+android {
+  ndkVersion rootProject.ext.ndkVersion
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  aaptOptions {
+    // https://firebase.google.com/docs/ml/android/use-custom-models#local_model
+    noCompress 'tflite'
+  }
+  defaultConfig {
+    applicationId 'com.invertase.testing'
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+    versionCode 200
+    versionName '1.0'
+
+    // detox items
+    testBuildType System.getProperty('testBuildType', 'debug')
+    testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    missingDimensionStrategy 'detox', 'full'
+  }
+  splits {
+    abi {
+      reset()
+      enable enableSeparateBuildPerCPUArchitecture
+      universalApk false  // If true, also generate a universal APK
+      include 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64'
+    }
+  }
+
+  signingConfigs {
+    release {
+      storeFile file('keystore.jks')
+      storePassword '12345678'
+      keyAlias 'key0'
+      keyPassword '12345678'
+    }
+  }
+
+  buildTypes {
+    debug {
+      debuggable true
+      testCoverageEnabled true
+      signingConfig signingConfigs.release // sign with shared SHA256; configured in firebase dynamic-links
+    }
+    release {
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      proguardFile "${rootProject.projectDir}/../node_modules/detox/android/detox/proguard-rules-app.pro"
+      signingConfig signingConfigs.release
+      firebaseCrashlytics {
+        nativeSymbolUploadEnabled true
+          unstrippedNativeLibsDir 'build/intermediates/merged_native_libs/release/out/lib'
+      }
+    }
+  }
+
+  testOptions {
+    unitTests {
+      includeAndroidResources = true
+    }
+  }
+
+  // applicationVariants are e.g. debug, release
+  applicationVariants.all { variant ->
+    variant.outputs.each { output ->
+      // For each separate APK per architecture, set a unique version code as described here:
+      // https://developer.android.com/studio/build/configure-apk-splits.html
+      def versionCodes = ['armeabi-v7a': 1, 'x86': 2, 'arm64-v8a': 3, 'x86_64': 4]
+      def abi = output.getFilter(OutputFile.ABI)
+      if (abi != null) {  // null for the universal-debug, universal-release variants
+        output.versionCodeOverride =
+          versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+      }
+    }
+  }
+}
+
+apply from: './jacoco.gradle'
+
+dependencies {
+  implementation fileTree(include: ['*.jar'], dir: 'libs')
+  //noinspection GradleDynamicVersion
+  implementation 'com.facebook.react:react-native:+'
+
+  implementation("androidx.annotation:annotation:${rootProject.ext.androidxAnnotationVersion}")
+  implementation("androidx.appcompat:appcompat:${rootProject.ext.appCompatVersion}")
+  implementation("androidx.core:core:${rootProject.ext.supportLibVersion}")
+  implementation("androidx.fragment:fragment:${rootProject.ext.fragmentVersion}")
+  implementation("androidx.legacy:legacy-support-core-ui:${rootProject.ext.supportV4Version}")
+  implementation("androidx.legacy:legacy-support-core-utils:${rootProject.ext.supportV4Version}")
+  implementation("androidx.swiperefreshlayout:swiperefreshlayout:${rootProject.ext.swiperefreshlayoutVersion}")
+  implementation("androidx.vectordrawable:vectordrawable-animated:${rootProject.ext.vectordrawableVersion}")
+  implementation("androidx.vectordrawable:vectordrawable:${rootProject.ext.vectordrawableVersion}")
+
+  // JSC from node_modules
+  implementation jscFlavor
+
+  /* ------------------------
+   *  TESTING SDKS/LIBRARIES
+   * ------------------------ */
+    androidTestImplementation(project(path: ':detox'))
+
+    // These are beta, so they are not in the BoM yet. We have to specify the versions explicitly.
+    androidTestImplementation 'com.google.firebase:firebase-appcheck-debug-testing:16.0.0-beta04'
+}
+
+apply from: file('../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle'); applyNativeModulesAppBuildGradle(project)
