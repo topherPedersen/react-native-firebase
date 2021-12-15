@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import struct from '@react-native-firebase/app/lib/common/struct';
+import struct from '@topher_pedersen/react-native-firebase-app/lib/common/struct';
 
 const Item = struct({
   item_brand: 'string?',

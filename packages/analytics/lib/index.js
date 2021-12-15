@@ -23,14 +23,14 @@ import {
   isOneOf,
   isString,
   isUndefined,
-} from '@react-native-firebase/app/lib/common';
-import { validateStruct, validateCompound } from '@react-native-firebase/app/lib/common/struct';
+} from '@topher_pedersen/react-native-firebase-app/lib/common';
+import { validateStruct, validateCompound } from '@topher_pedersen/react-native-firebase-app/lib/common/struct';
 
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/react-native-firebase-app/lib/internal';
 import { isBoolean } from '@react-native-firebase/app/lib/common';
 
 import version from './version';

@@ -15,7 +15,7 @@
  *
  */
 
-import { isObject, isString } from '@react-native-firebase/app/lib/common';
+import { isObject, isString } from '@topher_pedersen/react-native-firebase-app/lib/common';
 
 export default function buildAnalytics(analyticsParams) {
   if (!isObject(analyticsParams)) {
