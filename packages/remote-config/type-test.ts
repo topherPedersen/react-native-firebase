@@ -1,5 +1,5 @@
 import firebase from '@topher_pedersen/app';
-import * as config from '@react-native-firebase/remote-config';
+import * as config from '@topher_pedersen/remote-config';
 
 console.log(config.default().app);
 

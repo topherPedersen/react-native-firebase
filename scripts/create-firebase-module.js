@@ -93,7 +93,7 @@ inquirer
     return Promise.resolve({ name, nameUpper });
   })
   .then(({ name, nameUpper }) => {
-    shelljs.exec(`lerna add @react-native-firebase/${name} tests && yarn`);
+    shelljs.exec(`lerna add @topher_pedersen/${name} tests && yarn`);
     console.log('');
     console.log(`The module '${name}' (${nameUpper}) has been created!`);
     console.log('');

@@ -17,7 +17,7 @@ as early on in your application code as possible:
 ```js
 // index.js
 import { AppRegistry } from 'react-native';
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 database().setPersistenceEnabled(true);
 
@@ -29,7 +29,7 @@ AppRegistry.registerComponent('app', () => App);
 The API provides a `goOffline` method to force the Realtime Database SDK to go offline, which can be useful for testing.
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 await database().goOffline();
 ```
@@ -39,7 +39,7 @@ For example, we write to a record which has a listener whilst offline allowing t
 
 ```jsx
 import React, { useEffect } from 'react';
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 function App() {
   useEffect(() => {
@@ -77,7 +77,7 @@ The `goOnline` method re-connects the Realtime Database with the remote database
 whilst offline will be automatically synchronized with the remote database.
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 await database().goOnline();
 ```
@@ -89,7 +89,7 @@ Firebase Database will start removing data that hasn't been recently used. If yo
 little or too much data, call the `setPersistenceCacheSizeBytes` method to update the default cache size:
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 database().setPersistenceCacheSizeBytes(2000000); // 2MB
 ```

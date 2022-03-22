@@ -22,7 +22,7 @@ must be requested from your users in order to display remote notifications from 
 `requestPermission` API:
 
 ```js
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 
 async function requestUserPermission() {
   const authorizationStatus = await messaging().requestPermission();
@@ -77,7 +77,7 @@ API used above resolves an enum that returns the current status.
 For example:
 
 ```js
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 
 async function checkApplicationPermission() {
   const authorizationStatus = await messaging().requestPermission();
@@ -136,7 +136,7 @@ await messaging().requestPermission({ providesAppNotificationSettings: true });
 ```typescript
 // index.js
 import { AppRegistry } from 'react-native'
-import messaging from '@react-native-firebase/messaging'
+import messaging from '@topher_pedersen/messaging'
 
 ...
 

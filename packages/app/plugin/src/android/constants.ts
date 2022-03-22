@@ -1,4 +1,4 @@
-const appPackageJson = require('@react-native-firebase/app/package.json');
+const appPackageJson = require('@topher_pedersen/app/package.json');
 
 export const DEFAULT_TARGET_PATH = 'app/google-services.json';
 

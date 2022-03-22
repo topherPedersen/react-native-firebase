@@ -1,5 +1,5 @@
 import firebase from '@topher_pedersen/app';
-import * as dynamicLinks from '@react-native-firebase/dynamic-links';
+import * as dynamicLinks from '@topher_pedersen/dynamic-links';
 
 console.log(dynamicLinks.default().getInitialLink);
 

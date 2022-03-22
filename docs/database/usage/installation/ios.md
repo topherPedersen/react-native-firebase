@@ -16,7 +16,7 @@ Add the `RNFBDatabase` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   #  ...
-  pod 'RNFBDatabase', :path => '../node_modules/@react-native-firebase/database'
+  pod 'RNFBDatabase', :path => '../node_modules/@topher_pedersen/database'
 end
 ```
 

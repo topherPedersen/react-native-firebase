@@ -1,5 +1,5 @@
 import firebase from '@topher_pedersen/app';
-import * as ml from '@react-native-firebase/ml';
+import * as ml from '@topher_pedersen/ml';
 
 console.log(ml.default().app);
 

@@ -15,7 +15,7 @@
  *
  */
 
-import { isString } from '@react-native-firebase/app/lib/common';
+import { isString } from '@topher_pedersen/app/lib/common';
 import FirebaseApp from '../../FirebaseApp';
 import SDK_VERSION from '../../version';
 import { DEFAULT_APP_NAME, KNOWN_NAMESPACES } from '../constants';
@@ -203,7 +203,7 @@ function firebaseRootModuleProxy(firebaseNamespace, moduleNamespace) {
     [
       `You attempted to use 'firebase.${moduleNamespace}' but this module could not be found.`,
       '',
-      `Ensure you have installed and imported the '@react-native-firebase/${moduleWithDashes}' package.`,
+      `Ensure you have installed and imported the '@topher_pedersen/${moduleWithDashes}' package.`,
     ].join('\r\n'),
   );
 }
@@ -229,7 +229,7 @@ export function firebaseAppModuleProxy(app, moduleNamespace) {
     [
       `You attempted to use "firebase.app('${app.name}').${moduleNamespace}" but this module could not be found.`,
       '',
-      `Ensure you have installed and imported the '@react-native-firebase/${moduleWithDashes}' package.`,
+      `Ensure you have installed and imported the '@topher_pedersen/${moduleWithDashes}' package.`,
     ].join('\r\n'),
   );
 }

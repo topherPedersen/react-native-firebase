@@ -15,12 +15,12 @@
  *
  */
 
-import { isBoolean, isIOS, isString } from '@react-native-firebase/app/lib/common';
+import { isBoolean, isIOS, isString } from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 
 import version from './version';
 
@@ -76,10 +76,10 @@ class FirebaseAppCheckModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/app-check';
+// import { SDK_VERSION } from '@topher_pedersen/app-check';
 export const SDK_VERSION = version;
 
-// import appCheck from '@react-native-firebase/app-check';
+// import appCheck from '@topher_pedersen/app-check';
 // appCheck().X(...);
 export default createModuleNamespace({
   statics,
@@ -92,7 +92,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseAppCheckModule,
 });
 
-// import appCheck, { firebase } from '@react-native-firebase/app-check';
+// import appCheck, { firebase } from '@topher_pedersen/app-check';
 // appCheck().X(...);
 // firebase.appCheck().X(...);
 export const firebase = getFirebaseRoot();

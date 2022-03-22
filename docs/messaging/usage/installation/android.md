@@ -14,8 +14,8 @@ The following steps are only required if your environment does not have access t
 Add the following to your project's `/android/settings.gradle` file:
 
 ```groovy
-include ':@react-native-firebase_messaging'
-project(':@react-native-firebase_messaging').projectDir = new File(rootProject.projectDir, './../node_modules/@react-native-firebase/messaging/android')
+include ':@topher_pedersen_messaging'
+project(':@topher_pedersen_messaging').projectDir = new File(rootProject.projectDir, './../node_modules/@topher_pedersen/messaging/android')
 ```
 
 ## 2. Update Gradle Dependencies
@@ -25,7 +25,7 @@ Add the React Native Functions module dependency to your `/android/app/build.gra
 ```groovy
 dependencies {
   // ...
-  implementation project(path: ":@react-native-firebase_messaging")
+  implementation project(path: ":@topher_pedersen_messaging")
 }
 ```
 

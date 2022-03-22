@@ -3,11 +3,11 @@ import { ConfigPlugin, withPlugins, createRunOncePlugin } from '@expo/config-plu
 import { withApplyPerfPlugin, withBuildscriptDependency } from './android';
 
 /**
- * A config plugin for configuring `@react-native-firebase/perf`
+ * A config plugin for configuring `@topher_pedersen/perf`
  */
 const withRnFirebasePerf: ConfigPlugin = config => {
   return withPlugins(config, [withBuildscriptDependency, withApplyPerfPlugin]);
 };
 
-const pak = require('@react-native-firebase/perf/package.json');
+const pak = require('@topher_pedersen/perf/package.json');
 export default createRunOncePlugin(withRnFirebasePerf, pak.name, pak.version);

@@ -114,7 +114,7 @@ You can switch app instances at any time whilst developing by calling the `app` 
 
 ```js
 import firebase from '@topher_pedersen/app';
-import '@react-native-firebase/auth';
+import '@topher_pedersen/auth';
 
 // Example using auth
 firebase.app('SECONDARY_APP').auth().currentUser;
@@ -124,7 +124,7 @@ Or pass the secondary app instance you created above directly to the desired mod
 
 ```js
 import firebase from '@topher_pedersen/app';
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 // create secondary app as described above
 const secondaryApp = await firebase.initializeApp(credentials, config);

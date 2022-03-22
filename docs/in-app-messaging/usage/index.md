@@ -8,17 +8,17 @@ previous: /dynamic-links/usage
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
-This module also requires that the `@react-native-firebase/analytics` module is already setup and installed. To install the "analytics" module, view it's [Getting Started](/analytics/usage) documentation.
+This module also requires that the `@topher_pedersen/analytics` module is already setup and installed. To install the "analytics" module, view it's [Getting Started](/analytics/usage) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the in-app-messaging module
-yarn add @react-native-firebase/in-app-messaging
+yarn add @topher_pedersen/in-app-messaging
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -61,7 +61,7 @@ a use case for controlling the flow of messages:
 > The suppressed state is not persisted between restarts, so ensure it is called as early as possible.
 
 ```jsx
-import inAppMessaging from '@react-native-firebase/in-app-messaging';
+import inAppMessaging from '@topher_pedersen/in-app-messaging';
 
 async function bootstrap() {
   await inAppMessaging().setMessagesDisplaySuppressed(true);

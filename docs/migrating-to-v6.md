@@ -33,7 +33,7 @@ Version 6 also brings support for previously unsupported modules such as [Fireba
 Prior to version 6, all modules are installable from the `react-native-firebase` NPM package. With version 6 we are
 now taking advantage of NPM organizations, allowing us to distribute each module as its own package. This has a number
 of advantages such as smaller app bundle sizes (you only install what modules you need), and internally we treat each module
-as its own package, allowing for easier testing and quality assurance. Every project must install the `@react-native-firebase/app`
+as its own package, allowing for easier testing and quality assurance. Every project must install the `@topher_pedersen/app`
 module, replacing the `react-native-firebase` module.
 
 ## Removing `react-native-firebase`
@@ -223,15 +223,15 @@ $ pod install
 
 ---
 
-## Installing `@react-native-firebase/app`
+## Installing `@topher_pedersen/app`
 
-As mentioned earlier, version 6 uses the `@react-native-firebase` NPM organization for each module. Every app using
+As mentioned earlier, version 6 uses the `@topher_pedersen` NPM organization for each module. Every app using
 version 6 must install the `app` module before installing each specific module.
 
 To get started, install the new dependency with [Yarn](https://yarnpkg.com/lang/en/):
 
 ```bash
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 ```
 
 If you are using React Native 0.60+, the module will be automatically linked via [autolinking](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md).
@@ -245,30 +245,30 @@ Depending on which Firebase service your app uses, you now need to install the N
 apps using the Authentication module need to install the `auth` package:
 
 ```bash
-yarn add @react-native-firebase/auth
+yarn add @topher_pedersen/auth
 ```
 
 Install the modules required for your application:
 
 | Module                                                       | NPM Package                             |
 | ------------------------------------------------------------ | --------------------------------------- |
-| <Anchor href="v6/admob">AdMob</Anchor>                       | @react-native-firebase/admob            |
-| <Anchor href="v6/analytics">Analytics</Anchor>               | @react-native-firebase/analytics        |
-| <Anchor href="v6/app">App</Anchor>                           | @react-native-firebase/app              |
-| <Anchor href="v6/invites">App Invites</Anchor>               | @react-native-firebase/invites          |
-| <Anchor href="v6/auth">Authentication</Anchor>               | @react-native-firebase/auth             |
-| <Anchor href="v6/firestore">Cloud Firestore</Anchor>         | @react-native-firebase/firestore        |
-| <Anchor href="v6/functions">Cloud Functions</Anchor>         | @react-native-firebase/functions        |
-| <Anchor href="v6/messaging">Cloud Messaging</Anchor>         | @react-native-firebase/messaging        |
-| <Anchor href="v6/storage">Cloud Storage</Anchor>             | @react-native-firebase/storage          |
-| <Anchor href="v6/crashlytics">Crashlytics</Anchor>           | @react-native-firebase/crashlytics      |
-| <Anchor href="v6/links">Dynamic Links</Anchor>               | @react-native-firebase/dynamic-links    |
-| <Anchor href="v6/in-app-messaging">In-app Messaging</Anchor> | @react-native-firebase/in-app-messaging |
-| <Anchor href="v6/iid">Instance ID</Anchor>                   | @react-native-firebase/iid              |
-| <Anchor href="v6/ml">ML</Anchor>                             | @react-native-firebase/ml               |
-| <Anchor href="v6/perf">Performance Monitoring</Anchor>       | @react-native-firebase/perf             |
-| <Anchor href="v6/database">Realtime Database</Anchor>        | @react-native-firebase/database         |
-| <Anchor href="v6/remote-config">Remote Config</Anchor>       | @react-native-firebase/remote-config    |
+| <Anchor href="v6/admob">AdMob</Anchor>                       | @topher_pedersen/admob            |
+| <Anchor href="v6/analytics">Analytics</Anchor>               | @topher_pedersen/analytics        |
+| <Anchor href="v6/app">App</Anchor>                           | @topher_pedersen/app              |
+| <Anchor href="v6/invites">App Invites</Anchor>               | @topher_pedersen/invites          |
+| <Anchor href="v6/auth">Authentication</Anchor>               | @topher_pedersen/auth             |
+| <Anchor href="v6/firestore">Cloud Firestore</Anchor>         | @topher_pedersen/firestore        |
+| <Anchor href="v6/functions">Cloud Functions</Anchor>         | @topher_pedersen/functions        |
+| <Anchor href="v6/messaging">Cloud Messaging</Anchor>         | @topher_pedersen/messaging        |
+| <Anchor href="v6/storage">Cloud Storage</Anchor>             | @topher_pedersen/storage          |
+| <Anchor href="v6/crashlytics">Crashlytics</Anchor>           | @topher_pedersen/crashlytics      |
+| <Anchor href="v6/links">Dynamic Links</Anchor>               | @topher_pedersen/dynamic-links    |
+| <Anchor href="v6/in-app-messaging">In-app Messaging</Anchor> | @topher_pedersen/in-app-messaging |
+| <Anchor href="v6/iid">Instance ID</Anchor>                   | @topher_pedersen/iid              |
+| <Anchor href="v6/ml">ML</Anchor>                             | @topher_pedersen/ml               |
+| <Anchor href="v6/perf">Performance Monitoring</Anchor>       | @topher_pedersen/perf             |
+| <Anchor href="v6/database">Realtime Database</Anchor>        | @topher_pedersen/database         |
+| <Anchor href="v6/remote-config">Remote Config</Anchor>       | @topher_pedersen/remote-config    |
 
 Users on React Native version 0.60+, the modules will be automatically linked. For users on a lower version,
 see the module specific pages for manual installation guides.
@@ -289,7 +289,7 @@ Although it is possible to access specific module functionality from the package
 following usage may seem daunting for a large project:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 // App code...
 const user = auth().currentUser;
@@ -309,7 +309,7 @@ to import the Authentication module, add the following to your projects `/App.js
 
 ```js
 import firebase from '@topher_pedersen/app';
-import '@react-native-firebase/auth';
+import '@topher_pedersen/auth';
 
 // App code
 const user = firebase.auth().currentUser;
@@ -326,7 +326,7 @@ app functionality is tested once migrated to version 6 is complete.
 
 ### App
 
-`@react-native-firebase/app`
+`@topher_pedersen/app`
 
 - `onReady()` removed: Users initializing a secondary app via `app.initializeApp` will need to now remove the `onReady`
   listener. Instead, `initializeApp` resolves a promise once the secondary app has finished initializing.
@@ -334,7 +334,7 @@ app functionality is tested once migrated to version 6 is complete.
 
 ### AdMob
 
-`@react-native-firebase/admob`
+`@topher_pedersen/admob`
 
 The AdMob module has undergone a full re-write to support a new, cleaner API and regulation changes (such as GDPR).
 Please see the <Anchor href="/admob">AdMob</Anchor> documentation and update your code usage.
@@ -350,13 +350,13 @@ The recommended approach for handling this deprecation is to use the Dynamic Lin
 
 ### Analytics
 
-`@react-native-firebase/analytics`
+`@topher_pedersen/analytics`
 
 - All methods now return a `Promise`. Previously these were 'fire and forget'.
 
 ### Crashlytics
 
-`@react-native-firebase/crashlytics`
+`@topher_pedersen/crashlytics`
 
 - `setBoolValue`, `setFloatValue`, `setIntValue` & `setStringValue` have been removed and replaced with two new methods (the Crashlytics SDK converted all these into strings internally anyway):
   - `setAttribute(key: string, value: string): Promise<null>` - set a singular key value to show alongside any subsequent crash reports
@@ -368,7 +368,7 @@ The recommended approach for handling this deprecation is to use the Dynamic Lin
 
 ### Firestore
 
-`@react-native-firebase/firestore`
+`@topher_pedersen/firestore`
 
 - The `Blob` class can no longer be manually constructed.
 - All user code is now validated in `JavaScript`. Passing incorrect data or querying chaining will now throw a JavaScript error. Ensure all queries are thoroughly tested.
@@ -378,7 +378,7 @@ The recommended approach for handling this deprecation is to use the Dynamic Lin
 
 ### Dynamic Links
 
-`@react-native-firebase/dynamic-links`
+`@topher_pedersen/dynamic-links`
 
 - Module usage has been renamed from `links()` to `dynamicLinks()`.
 - The `onLink` and `getInitialLink` methods now return a `DynamicLink` object, rather than the string URL.
@@ -387,19 +387,19 @@ The recommended approach for handling this deprecation is to use the Dynamic Lin
 
 ### Functions
 
-`@react-native-firebase/functions`
+`@topher_pedersen/functions`
 
 No breaking changes.
 
 ### In-App Messaging
 
-`@react-native-firebase/in-app-messaging`
+`@topher_pedersen/in-app-messaging`
 
 This is a new module. See documentation for usage.
 
 ### Instance ID
 
-`@react-native-firebase/iid`
+`@topher_pedersen/iid`
 
 No breaking changes.
 
@@ -413,7 +413,7 @@ How to migrate: If you use device-local notification APIs and user-visible notif
 
 ### Cloud Messaging
 
-`@react-native-firebase/messaging`
+`@topher_pedersen/messaging`
 
 - [android] The manually added `RNFirebaseMessagingService` service in your `AndroidManifest.xml` file is no longer required - you can safely remove it.
 - [iOS] The manually added `RNFirebaseMessaging` usages in your `AppDelegate` files are no longer required - you can safely remove them.
@@ -426,7 +426,7 @@ How to migrate: If you use device-local notification APIs and user-visible notif
 
 ### Performance Monitoring
 
-`@react-native-firebase/perf`
+`@topher_pedersen/perf`
 
 - All `Trace` & `HttpMetric` methods (except for `start` & `stop`) are now synchronous and no longer return a Promise,
   extra attributes/metrics now only get sent to native when you call stop.
@@ -435,7 +435,7 @@ How to migrate: If you use device-local notification APIs and user-visible notif
 
 ### Realtime Database
 
-`@react-native-firebase/database`
+`@topher_pedersen/database`
 
 - The `Reference` class has undergone a rewrite. In previous versions, chaining invalid methods together on a query was possible. In version 6, the functionality now replicates the Firebase Web SDK.
   - Please thoroughly test your database queries.
@@ -445,7 +445,7 @@ How to migrate: If you use device-local notification APIs and user-visible notif
 
 ### Remote Config
 
-`@react-native-firebase/remote-config`
+`@topher_pedersen/remote-config`
 
 - Module namespace has been renamed to `.remoteConfig()` from `.config()`.
 - All Remote Config values can now be accessed synchronously in JS, see `getValue(key: string): ConfigValue` & `getAll(): ConfigValues` below.
@@ -458,7 +458,7 @@ How to migrate: If you use device-local notification APIs and user-visible notif
 
 ### Cloud Storage
 
-`@react-native-firebase/storage`
+`@topher_pedersen/storage`
 
 - Removed formerly deprecated `UploadTaskSnapshot.downloadUrl` property, use `StorageReference.getDownloadURL(): Promise<string>` instead.
 - `StorageReference.downloadFile()` is now deprecated and will be removed in a later release, please rename usages of this to `writeToFile()` - renamed to match Native SDKs.
@@ -468,6 +468,6 @@ How to migrate: If you use device-local notification APIs and user-visible notif
 
 ### ML
 
-`@react-native-firebase/ml`
+`@topher_pedersen/ml`
 
 This is a new module. See documentation for usage.

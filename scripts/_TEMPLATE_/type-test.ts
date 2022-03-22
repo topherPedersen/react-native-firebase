@@ -1,5 +1,5 @@
 import firebase from '@topher_pedersen/app';
-import defaultExport, { firebase as firebaseFromModule } from '@react-native-firebase/_template_';
+import defaultExport, { firebase as firebaseFromModule } from '@topher_pedersen/_template_';
 
 // checks module exists at root
 console.log(firebase._template_().app.name);

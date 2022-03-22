@@ -24,7 +24,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `ml` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/ml';
+ * import { firebase } from '@topher_pedersen/ml';
  *
  * // firebase.ml().X
  * ```
@@ -34,7 +34,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `ml` package:
  *
  * ```js
- * import ml from '@react-native-firebase/ml';
+ * import ml from '@topher_pedersen/ml';
  *
  * // ml().X
  * ```
@@ -45,7 +45,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/ml';
+ * import '@topher_pedersen/ml';
  *
  * // firebase.ml().X
  * ```

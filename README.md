@@ -6,9 +6,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@react-native-firebase/app"><img src="https://img.shields.io/npm/dm/@react-native-firebase/app.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/app"><img src="https://img.shields.io/npm/v/@react-native-firebase/app.svg?style=flat-square" alt="NPM version"></a>
-  <a href="/LICENSE"><img src="https://img.shields.io/npm/l/@react-native-firebase/app.svg?style=flat-square" alt="License"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/app"><img src="https://img.shields.io/npm/dm/@topher_pedersen/app.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/app"><img src="https://img.shields.io/npm/v/@topher_pedersen/app.svg?style=flat-square" alt="NPM version"></a>
+  <a href="/LICENSE"><img src="https://img.shields.io/npm/l/@topher_pedersen/app.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
 
@@ -38,27 +38,27 @@ React Native Firebase is built with four key principals in mind;
 
 This is the root of the mono-repo for React Native Firebase, if you're looking for a specific package please select the package link from below.
 
-The main package that you interface with is `App` (`@react-native-firebase/app`)
+The main package that you interface with is `App` (`@topher_pedersen/app`)
 
 | Name                                                     | Downloads                                                                                                                                                                                       |                                                                                        
 | -------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | 
-| [Analytics](/packages/analytics)                         |           [![badge](https://img.shields.io/npm/dm/@react-native-firebase/analytics.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/analytics)           |
-| [App](/packages/app)                                     |                 [![badge](https://img.shields.io/npm/dm/@react-native-firebase/app.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/app)                 |
-| [App Check](/packages/app-check)                         |               [![badge](https://img.shields.io/npm/dm/@react-native-firebase/app-check.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/app-check)       |
-| [App Distribution](/packages/app-distribution)           |  [![badge](https://img.shields.io/npm/dm/@react-native-firebase/app-distribution.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/app-distribution)      |
-| [Authentication](/packages/auth)                         |                [![badge](https://img.shields.io/npm/dm/@react-native-firebase/auth.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/auth)                |
-| [Cloud Firestore](/packages/firestore)                   |           [![badge](https://img.shields.io/npm/dm/@react-native-firebase/firestore.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/firestore)           |
-| [Cloud Functions](/packages/functions)                   |           [![badge](https://img.shields.io/npm/dm/@react-native-firebase/functions.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/functions)           |
-| [Cloud Messaging](/packages/messaging)                   |           [![badge](https://img.shields.io/npm/dm/@react-native-firebase/messaging.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/messaging)           |
-| [Cloud Storage](/packages/storage)                       |             [![badge](https://img.shields.io/npm/dm/@react-native-firebase/storage.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/storage)             |
-| [Crashlytics](/packages/crashlytics)                     |         [![badge](https://img.shields.io/npm/dm/@react-native-firebase/crashlytics.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/crashlytics)         |
-| [Dynamic Links](/packages/dynamic-links)                 |       [![badge](https://img.shields.io/npm/dm/@react-native-firebase/dynamic-links.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/dynamic-links)       |
-| [In-app Messaging](/packages/in-app-messaging)           |    [![badge](https://img.shields.io/npm/dm/@react-native-firebase/in-app-messaging.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/in-app-messaging)    |
-| [Installations](/packages/installations)                 |    [![badge](https://img.shields.io/npm/dm/@react-native-firebase/installations.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/installations)          |
-| [ML](/packages/ml)                                       |           [![badge](https://img.shields.io/npm/dm/@react-native-firebase/ml.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/ml)                         |
-| [Performance Monitoring](/packages/perf)                 |                [![badge](https://img.shields.io/npm/dm/@react-native-firebase/perf.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/perf)                |
-| [Realtime Database](/packages/database)                  |            [![badge](https://img.shields.io/npm/dm/@react-native-firebase/database.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/database)            |
-| [Remote Config](/packages/remote-config)                 |       [![badge](https://img.shields.io/npm/dm/@react-native-firebase/remote-config.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@react-native-firebase/remote-config)       |
+| [Analytics](/packages/analytics)                         |           [![badge](https://img.shields.io/npm/dm/@topher_pedersen/analytics.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/analytics)           |
+| [App](/packages/app)                                     |                 [![badge](https://img.shields.io/npm/dm/@topher_pedersen/app.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/app)                 |
+| [App Check](/packages/app-check)                         |               [![badge](https://img.shields.io/npm/dm/@topher_pedersen/app-check.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/app-check)       |
+| [App Distribution](/packages/app-distribution)           |  [![badge](https://img.shields.io/npm/dm/@topher_pedersen/app-distribution.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/app-distribution)      |
+| [Authentication](/packages/auth)                         |                [![badge](https://img.shields.io/npm/dm/@topher_pedersen/auth.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/auth)                |
+| [Cloud Firestore](/packages/firestore)                   |           [![badge](https://img.shields.io/npm/dm/@topher_pedersen/firestore.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/firestore)           |
+| [Cloud Functions](/packages/functions)                   |           [![badge](https://img.shields.io/npm/dm/@topher_pedersen/functions.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/functions)           |
+| [Cloud Messaging](/packages/messaging)                   |           [![badge](https://img.shields.io/npm/dm/@topher_pedersen/messaging.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/messaging)           |
+| [Cloud Storage](/packages/storage)                       |             [![badge](https://img.shields.io/npm/dm/@topher_pedersen/storage.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/storage)             |
+| [Crashlytics](/packages/crashlytics)                     |         [![badge](https://img.shields.io/npm/dm/@topher_pedersen/crashlytics.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/crashlytics)         |
+| [Dynamic Links](/packages/dynamic-links)                 |       [![badge](https://img.shields.io/npm/dm/@topher_pedersen/dynamic-links.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/dynamic-links)       |
+| [In-app Messaging](/packages/in-app-messaging)           |    [![badge](https://img.shields.io/npm/dm/@topher_pedersen/in-app-messaging.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/in-app-messaging)    |
+| [Installations](/packages/installations)                 |    [![badge](https://img.shields.io/npm/dm/@topher_pedersen/installations.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/installations)          |
+| [ML](/packages/ml)                                       |           [![badge](https://img.shields.io/npm/dm/@topher_pedersen/ml.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/ml)                         |
+| [Performance Monitoring](/packages/perf)                 |                [![badge](https://img.shields.io/npm/dm/@topher_pedersen/perf.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/perf)                |
+| [Realtime Database](/packages/database)                  |            [![badge](https://img.shields.io/npm/dm/@topher_pedersen/database.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/database)            |
+| [Remote Config](/packages/remote-config)                 |       [![badge](https://img.shields.io/npm/dm/@topher_pedersen/remote-config.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@topher_pedersen/remote-config)       |
 
 ## Documentation
 

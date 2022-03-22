@@ -1,5 +1,5 @@
 import firebase from '@topher_pedersen/app';
-import * as crashlytics from '@react-native-firebase/crashlytics';
+import * as crashlytics from '@topher_pedersen/crashlytics';
 
 crashlytics.default().crash();
 

@@ -17,7 +17,7 @@ Add the `RNFBInAppMessaging` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   ...
-  pod 'RNFBInAppMessaging', :path => '../node_modules/@react-native-firebase/in-app-messaging'
+  pod 'RNFBInAppMessaging', :path => '../node_modules/@topher_pedersen/in-app-messaging'
 end
 ```
 

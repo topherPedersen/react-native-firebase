@@ -17,7 +17,7 @@ Add the `RNFBDynamicLinks` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   # ...
-  pod 'RNFBDynamicLinks', :path => '../node_modules/@react-native-firebase/dynamic-links'
+  pod 'RNFBDynamicLinks', :path => '../node_modules/@topher_pedersen/dynamic-links'
 end
 ```
 

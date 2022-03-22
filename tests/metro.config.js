@@ -53,8 +53,8 @@ const config = {
           if (typeof name !== 'string') {
             return target[name];
           }
-          if (name && name.startsWith && name.startsWith('@react-native-firebase')) {
-            const packageName = name.replace('@react-native-firebase/', '');
+          if (name && name.startsWith && name.startsWith('@topher_pedersen')) {
+            const packageName = name.replace('@topher_pedersen/', '');
             return join(__dirname, `../packages/${packageName}`);
           }
           return join(__dirname, `node_modules/${name}`);

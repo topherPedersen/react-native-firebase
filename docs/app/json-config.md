@@ -1,6 +1,6 @@
 ---
 title: Firebase JSON Config
-description: Configure @react-native-firebase modules
+description: Configure @topher_pedersen modules
 next: /app/utils
 previous: /app/usage
 ---
@@ -14,6 +14,6 @@ Add the [Config Schema](https://github.com/invertase/react-native-firebase/blob/
 
 ```json
 {
-  "$schema": "./node_modules/@react-native-firebase/app/firebase-schema.json"
+  "$schema": "./node_modules/@topher_pedersen/app/firebase-schema.json"
 }
 ```

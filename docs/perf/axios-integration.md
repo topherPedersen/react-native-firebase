@@ -18,7 +18,7 @@ property on the axios instance. At this point, a new HTTP metric can be defined 
 
 ```js
 import axios from 'axios';
-import perf from '@react-native-firebase/perf';
+import perf from '@topher_pedersen/perf';
 
 axios.interceptors.request.use(async function (config) {
   try {

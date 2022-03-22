@@ -40,7 +40,7 @@ The example below demonstrates how you could setup such a flow within your own a
 ```jsx
 import React, { useState } from 'react';
 import { Button, TextInput } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 function PhoneSignIn() {
   // If null, no SMS has been sent
@@ -104,7 +104,7 @@ After successfully creating a user with an email and password (see Authenticatio
 ```jsx
 import React, { useState, useEffect } from 'react';
 import { Button, TextInput, Text } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 export default function PhoneVerification() {
   // Set an initializing state whilst Firebase connects

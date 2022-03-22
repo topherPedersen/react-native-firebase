@@ -18,7 +18,7 @@
 
 // DO NOT USE EXCEPT FOR THIS REACT NATIVE FIREBASE TESTING PROJECT - YOU HAVE
 // BEEN WARNED 🙃
-require('@react-native-firebase/private-tests-helpers');
+require('@topher_pedersen/private-tests-helpers');
 
 Object.defineProperty(global, 'A2A', {
   get() {

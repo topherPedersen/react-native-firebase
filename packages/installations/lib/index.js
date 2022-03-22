@@ -15,12 +15,12 @@
  *
  */
 
-import { isIOS } from '@react-native-firebase/app/lib/common';
+import { isIOS } from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 
 import version from './version';
 
@@ -57,10 +57,10 @@ class FirebaseInstallationsModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/installations';
+// import { SDK_VERSION } from '@topher_pedersen/installations';
 export const SDK_VERSION = version;
 
-// import installations from '@react-native-firebase/installations';
+// import installations from '@topher_pedersen/installations';
 // installations().X(...);
 export default createModuleNamespace({
   statics,
@@ -73,7 +73,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseInstallationsModule,
 });
 
-// import installations, { firebase } from '@react-native-firebase/installations';
+// import installations, { firebase } from '@topher_pedersen/installations';
 // installations().X(...);
 // firebase.installations().X(...);
 export const firebase = getFirebaseRoot();

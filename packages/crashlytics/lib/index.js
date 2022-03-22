@@ -16,12 +16,12 @@
  *
  */
 
-import { isBoolean, isError, isObject, isString } from '@react-native-firebase/app/lib/common';
+import { isBoolean, isError, isObject, isString } from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 import StackTrace from 'stacktrace-js';
 import {
   createNativeErrorObj,
@@ -139,10 +139,10 @@ class FirebaseCrashlyticsModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/crashlytics';
+// import { SDK_VERSION } from '@topher_pedersen/crashlytics';
 export const SDK_VERSION = version;
 
-// import crashlytics from '@react-native-firebase/crashlytics';
+// import crashlytics from '@topher_pedersen/crashlytics';
 // crashlytics().X(...);
 export default createModuleNamespace({
   statics,
@@ -155,7 +155,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseCrashlyticsModule,
 });
 
-// import crashlytics, { firebase } from '@react-native-firebase/crashlytics';
+// import crashlytics, { firebase } from '@topher_pedersen/crashlytics';
 // crashlytics().X(...);
 // firebase.crashlytics().X(...);
 export const firebase = getFirebaseRoot();

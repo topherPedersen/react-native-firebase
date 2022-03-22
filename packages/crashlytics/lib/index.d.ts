@@ -23,7 +23,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * #### Example: Access the firebase export from the `crashlytics` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/crashlytics';
+ * import { firebase } from '@topher_pedersen/crashlytics';
  *
  * // firebase.crashlytics().X
  * ```
@@ -31,7 +31,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * #### Example: Using the default export from the `crashlytics` package:
  *
  * ```js
- * import crashlytics from '@react-native-firebase/crashlytics';
+ * import crashlytics from '@topher_pedersen/crashlytics';
  *
  * // crashlytics().X
  * ```
@@ -40,7 +40,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/crashlytics';
+ * import '@topher_pedersen/crashlytics';
  *
  * // firebase.crashlytics().X
  * ```

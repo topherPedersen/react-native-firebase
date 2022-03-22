@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `config` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/remote-config';
+ * import { firebase } from '@topher_pedersen/remote-config';
  *
  * // firebase.remoteConfig().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `config` package:
  *
  * ```js
- * import remoteConfig from '@react-native-firebase/remote-config';
+ * import remoteConfig from '@topher_pedersen/remote-config';
  *
  * // remoteConfig().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/remote-config';
+ * import '@topher_pedersen/remote-config';
  *
  * // firebase.remoteConfig().X
  * ```

@@ -29,7 +29,7 @@ You need to configure the following property as soon as possible in the startup 
 
 ```jsx
 import '@topher_pedersen/app';
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 // set the host and the port property to connect to the emulator
 // set these before any read/write operations occur to ensure it doesn't affect your Cloud Firestore data!

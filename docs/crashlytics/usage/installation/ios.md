@@ -16,7 +16,7 @@ Add the `RNFBCrashlytics` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   # Add the RNFBCrashlytics podspec to your app target:
-  pod 'RNFBCrashlytics', :path => '../node_modules/@react-native-firebase/crashlytics'
+  pod 'RNFBCrashlytics', :path => '../node_modules/@topher_pedersen/crashlytics'
 end
 ```
 

@@ -52,7 +52,7 @@ When the user presses the pre-rendered button, we can trigger the initial sign-i
 passing in the scope required for our application:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 import { appleAuth } from '@invertase/react-native-apple-authentication';
 
 async function onAppleButtonPress() {
@@ -110,7 +110,7 @@ function FacebookSignIn() {
 The `onFacebookButtonPress` can then be implemented as follows:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 import { LoginManager, AccessToken } from 'react-native-fbsdk-next';
 
 async function onFacebookButtonPress() {
@@ -141,7 +141,7 @@ async function onFacebookButtonPress() {
 To use Facebook Limited Login instead of "classic" Facebook Login, the `onFacebookButtonPress` can then be implemented as follows:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 import { LoginManager, AuthenticationToken } from 'react-native-fbsdk-next';
 import { sha256 } from 'react-native-sha256';
 
@@ -219,7 +219,7 @@ function TwitterSignIn() {
 The `onTwitterButtonPress` can then be implemented as follows:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 import { NativeModules } from 'react-native';
 const { RNTwitterSignIn } = NativeModules;
 
@@ -281,7 +281,7 @@ function GoogleSignIn() {
 The `onGoogleButtonPress` can then be implemented as follows:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
 async function onGoogleButtonPress() {

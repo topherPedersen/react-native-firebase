@@ -15,8 +15,8 @@ auto-linking.
 Add the following to your projects `/android/settings.gradle` file:
 
 ```groovy
-include ':@react-native-firebase_dynamic-links'
-project(':@react-native-firebase_dynamic-links').projectDir = new File(rootProject.projectDir, './../node_modules/@react-native-firebase/dynamic-links/android')
+include ':@topher_pedersen_dynamic-links'
+project(':@topher_pedersen_dynamic-links').projectDir = new File(rootProject.projectDir, './../node_modules/@topher_pedersen/dynamic-links/android')
 ```
 
 ## 2. Update Gradle Dependencies
@@ -26,7 +26,7 @@ Add the React Native Dynamic Links module dependency to your `/android/app/build
 ```groovy
 dependencies {
   // ...
-  implementation project(path: ":@react-native-firebase_dynamic-links")
+  implementation project(path: ":@topher_pedersen_dynamic-links")
 }
 ```
 

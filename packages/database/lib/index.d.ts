@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `database` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/database';
+ * import { firebase } from '@topher_pedersen/database';
  *
  * // firebase.database().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `database` package:
  *
  * ```js
- * import database from '@react-native-firebase/database';
+ * import database from '@topher_pedersen/database';
  *
  * // database().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/database';
+ * import '@topher_pedersen/database';
  *
  * // firebase.database().X
  * ```

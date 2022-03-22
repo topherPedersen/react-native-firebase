@@ -41,7 +41,7 @@ export function modifyObjcAppDelegate(contents: string): string {
   // Add invocation
   try {
     return mergeContents({
-      tag: '@react-native-firebase/app-didFinishLaunchingWithOptions',
+      tag: '@topher_pedersen/app-didFinishLaunchingWithOptions',
       src: contents,
       newSrc: methodInvocationBlock,
       anchor: methodInvocationLineMatcher,
@@ -55,7 +55,7 @@ export function modifyObjcAppDelegate(contents: string): string {
 
     // we fallback to another regex if the first one fails
     return mergeContents({
-      tag: '@react-native-firebase/app-didFinishLaunchingWithOptions-fallback',
+      tag: '@topher_pedersen/app-didFinishLaunchingWithOptions-fallback',
       src: contents,
       newSrc: methodInvocationBlock,
       anchor: fallbackInvocationLineMatcher,

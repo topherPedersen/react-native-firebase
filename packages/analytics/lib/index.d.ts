@@ -23,7 +23,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * #### Example: Access the firebase export from the `analytics` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/analytics';
+ * import { firebase } from '@topher_pedersen/analytics';
  *
  * // firebase.analytics().X
  * ```
@@ -31,7 +31,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * #### Example: Using the default export from the `analytics` package:
  *
  * ```js
- * import analytics from '@react-native-firebase/analytics';
+ * import analytics from '@topher_pedersen/analytics';
  *
  * // analytics().X
  * ```
@@ -40,7 +40,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/analytics';
+ * import '@topher_pedersen/analytics';
  *
  * // firebase.analytics().X
  * ```
@@ -755,7 +755,7 @@ export namespace FirebaseAnalyticsTypes {
      *
      * > When you set user properties, be sure to never include personally identifiable information such as names, social security numbers, or email addresses, even in hashed form.
      *
-     * @react-native-firebase
+     * @topher_pedersen
      * @param properties Set a property value to null to remove it.
      */
     setUserProperties(properties: { [key: string]: string | null }): Promise<void>;

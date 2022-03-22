@@ -15,7 +15,7 @@
  *
  */
 
-import { NativeFirebaseError } from '@react-native-firebase/app/lib/internal';
+import { NativeFirebaseError } from '@topher_pedersen/app/lib/internal';
 
 export default class HttpsError extends Error {
   constructor(code, message, details, nativeErrorInstance) {

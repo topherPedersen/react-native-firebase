@@ -25,13 +25,13 @@ Install the React Native Firebase "app" module to the root of your React Native 
 
 ```bash
 # Using npm
-npm install --save @react-native-firebase/app
+npm install --save @topher_pedersen/app
 
 # Using Yarn
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 ```
 
-The `@react-native-firebase/app` module must be installed before using any other Firebase service.
+The `@topher_pedersen/app` module must be installed before using any other Firebase service.
 
 ### 2. Android Setup
 
@@ -137,7 +137,7 @@ cd ..
 npx react-native run-ios
 ```
 
-Once successfully linked and rebuilt, your application will be connected to Firebase using the `@react-native-firebase/app` module. This module does not provide much functionality, therefore to use other Firebase services, each of the modules for the individual Firebase services need installing separately.
+Once successfully linked and rebuilt, your application will be connected to Firebase using the `@topher_pedersen/app` module. This module does not provide much functionality, therefore to use other Firebase services, each of the modules for the individual Firebase services need installing separately.
 
 #### Manual Linking
 
@@ -266,7 +266,7 @@ _If you're using [Bare Workflow](https://docs.expo.io/introduction/managed-vs-ba
 
 The recommendation is to use a [custom development client](https://docs.expo.dev/clients/getting-started/). If starting a new app, you can run `npx create-react-native-app -t with-dev-client` to have this set up automatically. It will also allow you to use the Expo Application Service to test the android and iOS builds.
 
-After installing the `@react-native-firebase/app` NPM package, add the [config plugin](https://docs.expo.io/guides/config-plugins/) to the [`plugins`](https://docs.expo.io/versions/latest/config/app/#plugins) array of your `app.json` or `app.config.js`.
+After installing the `@topher_pedersen/app` NPM package, add the [config plugin](https://docs.expo.io/guides/config-plugins/) to the [`plugins`](https://docs.expo.io/versions/latest/config/app/#plugins) array of your `app.json` or `app.config.js`.
 
 Also, you have to provide paths to the `google-services.json` and `GoogleService-Info.plist` files by specifying the [`expo.android.googleServicesFile`](https://docs.expo.io/versions/latest/config/app/#googleservicesfile-1) and [`expo.ios.googleServicesFile`](https://docs.expo.io/versions/latest/config/app/#googleservicesfile) fields respectively.
 
@@ -282,9 +282,9 @@ The `app.json` for integration that included the optional crashlytics and perfor
       "googleServicesFile": "./GoogleService-Info.plist"
     },
     "plugins": [
-      "@react-native-firebase/app",
-      "@react-native-firebase/perf",
-      "@react-native-firebase/crashlytics"
+      "@topher_pedersen/app",
+      "@topher_pedersen/perf",
+      "@topher_pedersen/crashlytics"
     ]
   }
 }

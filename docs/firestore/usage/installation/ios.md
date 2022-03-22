@@ -16,7 +16,7 @@ Add the `RNFBFirestore` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   # ...
-  pod 'RNFBFirestore', :path => '../node_modules/@react-native-firebase/firestore'
+  pod 'RNFBFirestore', :path => '../node_modules/@topher_pedersen/firestore'
 end
 ```
 

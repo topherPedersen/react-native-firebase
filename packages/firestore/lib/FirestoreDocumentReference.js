@@ -15,8 +15,8 @@
  *
  */
 
-import { isObject, isString, isUndefined } from '@react-native-firebase/app/lib/common';
-import NativeError from '@react-native-firebase/app/lib/internal/NativeFirebaseError';
+import { isObject, isString, isUndefined } from '@topher_pedersen/app/lib/common';
+import NativeError from '@topher_pedersen/app/lib/internal/NativeFirebaseError';
 import { parseSetOptions, parseSnapshotArgs, parseUpdateArgs } from './utils';
 import { buildNativeMap, provideDocumentReferenceClass } from './utils/serialize';
 

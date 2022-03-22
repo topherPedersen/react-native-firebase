@@ -8,15 +8,15 @@ previous: /app/utils
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the Crashlytics module
-yarn add @react-native-firebase/crashlytics
+yarn add @topher_pedersen/crashlytics
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -26,7 +26,7 @@ Once installed, you must complete the following additional setup steps for Andro
 
 - [Android Additional Setup](/crashlytics/android-setup).
 
-> If you're using Expo, make sure to add the `@react-native-firebase/crashlytics` config plugin to your `app.json` or `app.config.js`. It handles the Android installation steps for you. For instructions on how to do that, view the [Expo](/#expo) installation section.
+> If you're using Expo, make sure to add the `@topher_pedersen/crashlytics` config plugin to your `app.json` or `app.config.js`. It handles the Android installation steps for you. For instructions on how to do that, view the [Expo](/#expo) installation section.
 
 If you're using an older version of React Native without autolinking support, or wish to integrate into an existing project,
 you can follow the manual installation steps for [iOS](/crashlytics/usage/installation/ios) and [Android](/crashlytics/usage/installation/android).
@@ -60,7 +60,7 @@ There are various methods to set attributes for the crash report, in order to pr
 ```js
 import React, { useEffect } from 'react';
 import { View, Button } from 'react-native';
-import crashlytics from '@react-native-firebase/crashlytics';
+import crashlytics from '@topher_pedersen/crashlytics';
 
 async function onSignIn(user) {
   crashlytics().log('User signed in.');
@@ -108,7 +108,7 @@ Crashlytics using the `recordError` method. This will also provide you with the 
 ```jsx
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import crashlytics from '@react-native-firebase/crashlytics';
+import crashlytics from '@topher_pedersen/crashlytics';
 
 const users = [];
 
@@ -159,7 +159,7 @@ This can be done throughout the app with a simple method call to `setCrashlytics
 ```jsx
 import React, { useState } from 'react';
 import { View, Button, Text } from 'react-native';
-import crashlytics from '@react-native-firebase/crashlytics';
+import crashlytics from '@topher_pedersen/crashlytics';
 
 export default function App() {
   const [enabled, setEnabled] = useState(crashlytics().isCrashlyticsCollectionEnabled);

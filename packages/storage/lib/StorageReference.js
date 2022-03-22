@@ -30,7 +30,7 @@ import {
   pathParent,
   ReferenceBase,
   toFilePath,
-} from '@react-native-firebase/app/lib/common';
+} from '@topher_pedersen/app/lib/common';
 import StorageDownloadTask from './StorageDownloadTask';
 import StorageListResult, { provideStorageReferenceClass } from './StorageListResult';
 import StorageStatics from './StorageStatics';

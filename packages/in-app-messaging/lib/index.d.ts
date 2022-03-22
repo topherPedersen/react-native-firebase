@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `inAppMessaging` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/in-app-messaging';
+ * import { firebase } from '@topher_pedersen/in-app-messaging';
  *
  * // firebase.inAppMessaging().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `in-app-messaging` package:
  *
  * ```js
- * import inAppMessaging from '@react-native-firebase/in-app-messaging';
+ * import inAppMessaging from '@topher_pedersen/in-app-messaging';
  *
  * // inAppMessaging().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/in-app-messaging';
+ * import '@topher_pedersen/in-app-messaging';
  *
  * // firebase.inAppMessaging().X
  * ```

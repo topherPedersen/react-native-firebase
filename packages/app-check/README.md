@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/app-check/detail"><img src="https://api.rnfirebase.io/coverage/app-check/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/app-check"><img src="https://img.shields.io/npm/dm/@react-native-firebase/app-check.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/app-check"><img src="https://img.shields.io/npm/v/@react-native-firebase/app-check.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/app-check"><img src="https://img.shields.io/npm/dm/@topher_pedersen/app-check.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/app-check"><img src="https://img.shields.io/npm/v/@topher_pedersen/app-check.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/npm/l/react-native-firebase.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
@@ -32,10 +32,10 @@ This attestation is attached to every request your app makes to your Firebase ba
 
 ## Installation
 
-Requires `@react-native-firebase/app` to be installed.
+Requires `@topher_pedersen/app` to be installed.
 
 ```bash
-yarn add @react-native-firebase/app-check
+yarn add @topher_pedersen/app-check
 ```
 
 ## Documentation

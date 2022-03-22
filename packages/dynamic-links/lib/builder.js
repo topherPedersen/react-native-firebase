@@ -15,7 +15,7 @@
  *
  */
 
-import { isObject, isString } from '@react-native-firebase/app/lib/common';
+import { isObject, isString } from '@topher_pedersen/app/lib/common';
 import buildAnalytics from './builders/analytics';
 import buildAndroid from './builders/android';
 import buildIos from './builders/ios';

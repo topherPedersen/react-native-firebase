@@ -78,15 +78,15 @@ jobs:
           mkdir patches || true
           for PACKAGE in $PACKAGE_LIST; do
             echo "Installing package $PACKAGE into fresh template app, then clobbering with PR version"
-            yarn add @react-native-firebase/$PACKAGE || true
-            if [ -d node_modules/@react-native-firebase/$PACKAGE ]; then
-              pushd node_modules/@react-native-firebase
+            yarn add @topher_pedersen/$PACKAGE || true
+            if [ -d node_modules/@topher_pedersen/$PACKAGE ]; then
+              pushd node_modules/@topher_pedersen
               tar -zxf $HOME/packages/react-native-firebase-${PACKAGE}-v*
               mv $PACKAGE/package.json package/
               \rm -fr $PACKAGE
               mv package $PACKAGE
               popd
-              npx patch-package @react-native-firebase/$PACKAGE || true
+              npx patch-package @topher_pedersen/$PACKAGE || true
             fi
           done
           ls -la $HOME/template/patches

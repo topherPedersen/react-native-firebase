@@ -15,12 +15,12 @@
  *
  */
 
-import { isIOS } from '@react-native-firebase/app/lib/common';
+import { isIOS } from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 
 import version from './version';
 
@@ -64,10 +64,10 @@ class FirebaseAppDistributionModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/app-distribution';
+// import { SDK_VERSION } from '@topher_pedersen/app-distribution';
 export const SDK_VERSION = version;
 
-// import appDistribution from '@react-native-firebase/app-distribution';
+// import appDistribution from '@topher_pedersen/app-distribution';
 // appDistribution().X(...);
 export default createModuleNamespace({
   statics,
@@ -80,7 +80,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseAppDistributionModule,
 });
 
-// import appDistribution, { firebase } from '@react-native-firebase/app-distribution';
+// import appDistribution, { firebase } from '@topher_pedersen/app-distribution';
 // appDistribution().X(...);
 // firebase.appDistribution().X(...);
 export const firebase = getFirebaseRoot();

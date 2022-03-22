@@ -8,17 +8,17 @@ previous: /database/presence-detection
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
-This module also requires that the `@react-native-firebase/analytics` module is already setup and installed. To install the "analytics" module, view it's [Getting Started](/analytics/usage) documentation.
+This module also requires that the `@topher_pedersen/analytics` module is already setup and installed. To install the "analytics" module, view it's [Getting Started](/analytics/usage) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the dynamic-links module
-yarn add @react-native-firebase/dynamic-links
+yarn add @topher_pedersen/dynamic-links
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -152,7 +152,7 @@ The iOS Notes app is a good place to paste your dynamic link and test it opens y
 You can create dynamic links via the Firebase console, your app or even your custom API. Please refer to [Firebase create dynamic link documentation](https://firebase.google.com/docs/dynamic-links/create-links) for further details. Below, we will show how to build links as part of your application code:
 
 ```jsx
-import dynamicLinks from '@react-native-firebase/dynamic-links';
+import dynamicLinks from '@topher_pedersen/dynamic-links';
 
 async function buildLink() {
   const link = await dynamicLinks().buildLink({
@@ -180,7 +180,7 @@ When the app is in the foreground state (visible on the device), you can use the
 when they happen:
 
 ```jsx
-import dynamicLinks from '@react-native-firebase/dynamic-links';
+import dynamicLinks from '@topher_pedersen/dynamic-links';
 
 function App() {
   const handleDynamicLink = link => {
@@ -206,7 +206,7 @@ If the application is in a background state or has fully quit then the `getIniti
 the application was opened via a link:
 
 ```jsx
-import dynamicLinks from '@react-native-firebase/dynamic-links';
+import dynamicLinks from '@topher_pedersen/dynamic-links';
 
 function App() {
   useEffect(() => {

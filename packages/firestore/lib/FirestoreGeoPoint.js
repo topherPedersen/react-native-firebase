@@ -15,7 +15,7 @@
  *
  */
 
-import { isFinite, isNumber, isUndefined } from '@react-native-firebase/app/lib/common';
+import { isFinite, isNumber, isUndefined } from '@topher_pedersen/app/lib/common';
 
 export default class FirestoreGeoPoint {
   constructor(latitude, longitude) {

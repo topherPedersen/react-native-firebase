@@ -15,25 +15,25 @@
  *
  */
 
-import '@react-native-firebase/analytics';
+import '@topher_pedersen/analytics';
 import firebase from '@topher_pedersen/app';
-import NativeEventEmitter from '@react-native-firebase/app/lib/internal/RNFBNativeEventEmitter';
-import '@react-native-firebase/app/lib/utils';
-import '@react-native-firebase/app-check';
-import '@react-native-firebase/app-distribution';
-import '@react-native-firebase/auth';
-import '@react-native-firebase/crashlytics';
-import '@react-native-firebase/database';
-import '@react-native-firebase/dynamic-links';
-import '@react-native-firebase/firestore';
-import '@react-native-firebase/functions';
-import '@react-native-firebase/in-app-messaging';
-import '@react-native-firebase/installations';
-import '@react-native-firebase/messaging';
-import '@react-native-firebase/ml';
-import '@react-native-firebase/perf';
-import '@react-native-firebase/remote-config';
-import '@react-native-firebase/storage';
+import NativeEventEmitter from '@topher_pedersen/app/lib/internal/RNFBNativeEventEmitter';
+import '@topher_pedersen/app/lib/utils';
+import '@topher_pedersen/app-check';
+import '@topher_pedersen/app-distribution';
+import '@topher_pedersen/auth';
+import '@topher_pedersen/crashlytics';
+import '@topher_pedersen/database';
+import '@topher_pedersen/dynamic-links';
+import '@topher_pedersen/firestore';
+import '@topher_pedersen/functions';
+import '@topher_pedersen/in-app-messaging';
+import '@topher_pedersen/installations';
+import '@topher_pedersen/messaging';
+import '@topher_pedersen/ml';
+import '@topher_pedersen/perf';
+import '@topher_pedersen/remote-config';
+import '@topher_pedersen/storage';
 import jet from 'jet/platform/react-native';
 import React from 'react';
 import { AppRegistry, Button, NativeModules, Text, View } from 'react-native';

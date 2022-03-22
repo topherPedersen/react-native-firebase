@@ -14,8 +14,8 @@ The following steps are only required if your environment does not have access t
 Add the following to your projects `/android/settings.gradle` file:
 
 ```groovy
-include ':@react-native-firebase_functions'
-project(':@react-native-firebase_functions').projectDir = new File(rootProject.projectDir, './../node_modules/@react-native-firebase/functions/android')
+include ':@topher_pedersen_functions'
+project(':@topher_pedersen_functions').projectDir = new File(rootProject.projectDir, './../node_modules/@topher_pedersen/functions/android')
 ```
 
 ## 2. Update Gradle Dependencies
@@ -25,7 +25,7 @@ Add the React Native Functions module dependency to your `/android/app/build.gra
 ```groovy
 dependencies {
   ...
-  implementation project(path: ":@react-native-firebase_functions")
+  implementation project(path: ":@topher_pedersen_functions")
 }
 ```
 

@@ -19,7 +19,7 @@ import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 
 import version from './version';
 
@@ -33,10 +33,10 @@ class Firebase_Template_Module extends FirebaseModule {
 
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/_template_';
+// import { SDK_VERSION } from '@topher_pedersen/_template_';
 export const SDK_VERSION = version;
 
-// import _template_ from '@react-native-firebase/_template_';
+// import _template_ from '@topher_pedersen/_template_';
 // _template_().X(...);
 export default createModuleNamespace({
   statics,
@@ -49,7 +49,7 @@ export default createModuleNamespace({
   ModuleClass: Firebase_Template_Module,
 });
 
-// import _template_, { firebase } from '@react-native-firebase/_template_';
+// import _template_, { firebase } from '@topher_pedersen/_template_';
 // _template_().X(...);
 // firebase._template_().X(...);
 export const firebase = getFirebaseRoot();

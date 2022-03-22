@@ -1,4 +1,4 @@
-rootProject.name = '@react-native-firebase_tests'
+rootProject.name = '@topher_pedersen_tests'
 include ':detox'
 project(':detox').projectDir = new File(rootProject.projectDir, '../node_modules/detox/android/detox')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)

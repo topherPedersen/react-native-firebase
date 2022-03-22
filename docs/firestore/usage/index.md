@@ -8,15 +8,15 @@ previous: /auth/phone-auth
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the firestore module
-yarn add @react-native-firebase/firestore
+yarn add @topher_pedersen/firestore
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -45,7 +45,7 @@ collections. For example, we could store a list of our users documents within a 
 allows us to reference a collection within our code:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 const usersCollection = firestore().collection('Users');
 ```
@@ -55,7 +55,7 @@ properties and methods to query and fetch the data from Cloud Firestore. We can 
 on the collection by calling the `doc` method:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 // Get user document with an ID of ABC
 const userDocument = firestore().collection('Users').doc('ABC');
@@ -78,7 +78,7 @@ To read a collection or document once, call the `get` method on a [`CollectionRe
 or [`DocumentReference`](/reference/firestore/documentreference):
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 const users = await firestore().collection('Users').get();
 const user = await firestore().collection('Users').doc('ABC').get();
@@ -90,7 +90,7 @@ To setup an active listener to react to any changes to the query, call the `onSn
 For example, to watch the entire "Users" collection for when any documents are changed (removed, added, modified):
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 function onResult(QuerySnapshot) {
   console.log('Got Users collection result.');
@@ -108,7 +108,7 @@ The `onSnapshot` method also returns a function, allowing you to unsubscribe fro
 
 ```js
 import React, { useEffect } from 'react';
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 function User({ userId }) {
   useEffect(() => {
@@ -143,7 +143,7 @@ and more.
 To access the documents within a `QuerySnapshot`, call the `forEach` method:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -169,7 +169,7 @@ to view a documents data, metadata and whether a document actually exists.
 To view a documents data, call the `data` method on the snapshot:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -331,7 +331,7 @@ For a more in-depth look at what is possible when writing data to Firestore plea
 To add a new document to a collection, use the `add` method on a [`CollectionReference`](/reference/firestore/collectionreference):
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -348,7 +348,7 @@ The `add` method adds the new document to your collection with a random unique I
 call the `set` method on a [`DocumentReference`](/reference/firestore/documentreference) instead:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -368,7 +368,7 @@ The `set` method exampled above replaces any existing data on a given [`Document
 if you'd like to update a document instead, use the `update` method:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -384,7 +384,7 @@ firestore()
 The method also provides support for updating deeply nested values via dot-notation:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -462,7 +462,7 @@ firestore()
 You can delete documents within Cloud Firestore using the `delete` method on a [`DocumentReference`](/reference/firestore/documentreference):
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 firestore()
   .collection('Users')
@@ -515,7 +515,7 @@ is executing, it will retry. This always ensures the value on the server is used
 To execute a new transaction, call the `runTransaction` method:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 function onPostLike(postId) {
   // Create a reference to the post
@@ -550,7 +550,7 @@ First, create a new batch instance via the `batch` method, perform operations on
 The example below shows how to delete all documents in a collection in a single operation:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 async function massDeleteUsers() {
   // Get all users
@@ -584,7 +584,7 @@ This functionality is enabled by default, however it can be disabled if you need
 sensitive information). The `settings()` method must be called before any Firestore interaction is performed, otherwise it will only take effect on the next app launch:
 
 ```js
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 async function bootstrap() {
   await firestore().settings({

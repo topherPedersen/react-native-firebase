@@ -8,17 +8,17 @@ previous: /ml/usage
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
-This module also requires that the `@react-native-firebase/analytics` module is already setup and installed. To install the "analytics" module, view it's [Getting Started](/analytics/usage) documentation.
+This module also requires that the `@topher_pedersen/analytics` module is already setup and installed. To install the "analytics" module, view it's [Getting Started](/analytics/usage) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the remote-config module
-yarn add @react-native-firebase/remote-config
+yarn add @topher_pedersen/remote-config
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -56,7 +56,7 @@ Setting default values helps to ensure that both the local device & Firebase ser
 
 ```js
 import React, { useEffect } from 'react';
-import remoteConfig from '@react-native-firebase/remote-config';
+import remoteConfig from '@topher_pedersen/remote-config';
 
 function App() {
   useEffect(() => {
@@ -77,7 +77,7 @@ Before reading the values from Firebase, we first need to pull them from Firebas
 the device (activating). The `fetchAndActivate` API combines both tasks into a single flow:
 
 ```js
-import remoteConfig from '@react-native-firebase/remote-config';
+import remoteConfig from '@topher_pedersen/remote-config';
 
 remoteConfig()
   .setDefaults({

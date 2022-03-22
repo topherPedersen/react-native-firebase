@@ -15,7 +15,7 @@
  *
  */
 
-import { hasOwnProperty, isNumber, isString } from '@react-native-firebase/app/lib/common';
+import { hasOwnProperty, isNumber, isString } from '@topher_pedersen/app/lib/common';
 import MetricWithAttributes from './MetricWithAttributes';
 
 export default class Trace extends MetricWithAttributes {

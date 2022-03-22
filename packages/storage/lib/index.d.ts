@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `storage` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/storage';
+ * import { firebase } from '@topher_pedersen/storage';
  *
  * // firebase.storage().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `storage` package:
  *
  * ```js
- * import storage from '@react-native-firebase/storage';
+ * import storage from '@topher_pedersen/storage';
  *
  * // storage().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/storage';
+ * import '@topher_pedersen/storage';
  *
  * // firebase.storage().X
  * ```

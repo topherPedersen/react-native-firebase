@@ -73,9 +73,9 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'conn
 
     def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*']
     def debugTree = fileTree(dir: "$project.buildDir/intermediates/javac/debug/classes", excludes: fileFilter)
-    def debugTree2 = fileTree(dir: "$project.buildDir/../../node_modules/@react-native-firebase/android/build/intermediates/javac/debug/classes", excludes: fileFilter)
+    def debugTree2 = fileTree(dir: "$project.buildDir/../../node_modules/@topher_pedersen/android/build/intermediates/javac/debug/classes", excludes: fileFilter)
     def mainSrc = "$project.projectDir/src/main/java"
-    def mainSrc2 = "$project.projectDir/../../node_modules/@react-native-firebase/android/src/main/java"
+    def mainSrc2 = "$project.projectDir/../../node_modules/@topher_pedersen/android/src/main/java"
 
     sourceDirectories.from = files([mainSrc, mainSrc2])
     classDirectories.from = files([debugTree, debugTree2])

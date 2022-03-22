@@ -36,7 +36,7 @@ data collection. Such functionality can be carried out by taking advantage of th
 
 ```js
 import { utils } from '@topher_pedersen/app';
-import analytics from '@react-native-firebase/analytics';
+import analytics from '@topher_pedersen/analytics';
 
 async function bootstrap() {
   if (utils().isRunningInTestLab) {

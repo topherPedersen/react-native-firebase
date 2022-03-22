@@ -15,19 +15,19 @@
  *
  */
 
-import { isAndroid, isNumber } from '@react-native-firebase/app/lib/common';
+import { isAndroid, isNumber } from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 import HttpsError from './HttpsError';
 import version from './version';
 
 const namespace = 'functions';
 const nativeModuleName = 'RNFBFunctionsModule';
 
-// import { HttpsErrorCode } from '@react-native-firebase/functions';
+// import { HttpsErrorCode } from '@topher_pedersen/functions';
 export const HttpsErrorCode = {
   OK: 'ok',
   CANCELLED: 'cancelled',
@@ -132,10 +132,10 @@ class FirebaseFunctionsModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/functions';
+// import { SDK_VERSION } from '@topher_pedersen/functions';
 export const SDK_VERSION = version;
 
-// import functions from '@react-native-firebase/functions';
+// import functions from '@topher_pedersen/functions';
 // functions().logEvent(...);
 export default createModuleNamespace({
   statics,
@@ -148,7 +148,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseFunctionsModule,
 });
 
-// import functions, { firebase } from '@react-native-firebase/functions';
+// import functions, { firebase } from '@topher_pedersen/functions';
 // functions().logEvent(...);
 // firebase.functions().logEvent(...);
 export const firebase = getFirebaseRoot();

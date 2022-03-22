@@ -42,7 +42,7 @@ the "Users" collection documents:
 ```jsx
 import React, { useState, useEffect } from 'react';
 import { ActivityIndicator } from 'react-native';
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 function Users() {
   const [loading, setLoading] = useState(true); // Set loading to true on component mount
@@ -106,7 +106,7 @@ With the raw user data in local state, we can now pass this to the `FlatList`:
 ```jsx
 import React, { useState, useEffect } from 'react';
 import { ActivityIndicator, FlatList, View, Text } from 'react-native';
-import firestore from '@react-native-firebase/firestore';
+import firestore from '@topher_pedersen/firestore';
 
 function Users() {
   // ...

@@ -17,7 +17,7 @@ Add the `RNFBML` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   # ...
-  pod 'RNFBML', :path => '../node_modules/@react-native-firebase/ml'
+  pod 'RNFBML', :path => '../node_modules/@topher_pedersen/ml'
 end
 ```
 

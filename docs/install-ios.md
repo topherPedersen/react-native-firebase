@@ -16,7 +16,7 @@ Add the `RNFBApp` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   #  ...
-  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+  pod 'RNFBApp', :path => '../node_modules/@topher_pedersen/app'
 end
 ```
 

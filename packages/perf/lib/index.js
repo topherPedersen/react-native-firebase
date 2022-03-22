@@ -15,12 +15,12 @@
  *
  */
 
-import { isBoolean, isOneOf, isString } from '@react-native-firebase/app/lib/common';
+import { isBoolean, isOneOf, isString } from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 import HttpMetric from './HttpMetric';
 import Trace from './Trace';
 import version from './version';
@@ -97,10 +97,10 @@ class FirebasePerfModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/perf';
+// import { SDK_VERSION } from '@topher_pedersen/perf';
 export const SDK_VERSION = version;
 
-// import perf from '@react-native-firebase/perf';
+// import perf from '@topher_pedersen/perf';
 // perf().X(...);
 export default createModuleNamespace({
   statics,
@@ -113,7 +113,7 @@ export default createModuleNamespace({
   ModuleClass: FirebasePerfModule,
 });
 
-// import perf, { firebase } from '@react-native-firebase/perf';
+// import perf, { firebase } from '@topher_pedersen/perf';
 // perf().X(...);
 // firebase.perf().X(...);
 export const firebase = getFirebaseRoot();

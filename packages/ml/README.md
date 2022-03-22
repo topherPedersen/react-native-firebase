@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/ml/detail"><img src="https://api.rnfirebase.io/coverage/ml/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/ml"><img src="https://img.shields.io/npm/dm/@react-native-firebase/ml.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/ml"><img src="https://img.shields.io/npm/v/@react-native-firebase/ml.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/ml"><img src="https://img.shields.io/npm/dm/@topher_pedersen/ml.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/ml"><img src="https://img.shields.io/npm/v/@topher_pedersen/ml.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/npm/l/react-native-firebase.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
@@ -69,10 +69,10 @@ This react-native-firebase module currently supports the following Firebase ML A
 
 ## Installation
 
-Requires `@react-native-firebase/app` to be installed.
+Requires `@topher_pedersen/app` to be installed.
 
 ```bash
-yarn add @react-native-firebase/ml
+yarn add @topher_pedersen/ml
 ```
 
 ## Documentation

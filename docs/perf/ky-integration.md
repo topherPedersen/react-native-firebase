@@ -16,7 +16,7 @@ Before HTTP requests are sent out of the React Native environment, a number of f
 We can use this `beforeRequest` hook to create our HTTP metric.
 
 ```js
-import perf from '@react-native-firebase/perf';
+import perf from '@topher_pedersen/perf';
 import ky from 'ky';
 
 const getContentLength = headers => {
@@ -89,7 +89,7 @@ how long the request took, response codes & more. Such data can give you greater
 A working example is provided below. Please adjust and extend according to your use case.
 
 ```js
-import perf from '@react-native-firebase/perf';
+import perf from '@topher_pedersen/perf';
 import ky from 'ky';
 
 const getContentLength = headers => {

@@ -8,15 +8,15 @@ previous: /app-check/usage
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app"
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app"
 module, view the [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the app-distribution module
-yarn add @react-native-firebase/app-distribution
+yarn add @topher_pedersen/app-distribution
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install

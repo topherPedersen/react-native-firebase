@@ -23,7 +23,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * #### Example: Access the firebase export from the `auth` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/auth';
+ * import { firebase } from '@topher_pedersen/auth';
  *
  * // firebase.auth().X
  * ```
@@ -31,7 +31,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * #### Example: Using the default export from the `auth` package:
  *
  * ```js
- * import auth from '@react-native-firebase/auth';
+ * import auth from '@topher_pedersen/auth';
  *
  * // auth().X
  * ```
@@ -40,7 +40,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/auth';
+ * import '@topher_pedersen/auth';
  *
  * // firebase.auth().X
  * ```
@@ -1336,7 +1336,7 @@ export namespace FirebaseAuthTypes {
      *
      * > This is an experimental feature and is only part of React Native Firebase.
      *
-     * @react-native-firebase
+     * @topher_pedersen
      * @param listener A listener function which triggers when the users data changes.
      */
     onUserChanged(listener: CallbackOrObserver<AuthListenerCallback>): () => void;

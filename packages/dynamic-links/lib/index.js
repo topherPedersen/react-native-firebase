@@ -19,7 +19,7 @@ import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 import builder from './builder';
 import version from './version';
 
@@ -94,10 +94,10 @@ class FirebaseLinksModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/dynamic-links';
+// import { SDK_VERSION } from '@topher_pedersen/dynamic-links';
 export const SDK_VERSION = version;
 
-// import links from '@react-native-firebase/dynamic-links';
+// import links from '@topher_pedersen/dynamic-links';
 // links().X(...);
 export default createModuleNamespace({
   statics,
@@ -110,7 +110,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseLinksModule,
 });
 
-// import links, { firebase } from '@react-native-firebase/dynamic-links';
+// import links, { firebase } from '@topher_pedersen/dynamic-links';
 // links().X(...);
 // firebase.links().X(...);
 export const firebase = getFirebaseRoot();

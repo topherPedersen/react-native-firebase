@@ -20,7 +20,7 @@ import {
   isFunction,
   isObject,
   isUndefined,
-} from '@react-native-firebase/app/lib/common';
+} from '@topher_pedersen/app/lib/common';
 import FirestoreDocumentChange from './FirestoreDocumentChange';
 import FirestoreDocumentSnapshot from './FirestoreDocumentSnapshot';
 import FirestoreSnapshotMetadata from './FirestoreSnapshotMetadata';

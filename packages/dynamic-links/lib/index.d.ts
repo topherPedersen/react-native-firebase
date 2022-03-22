@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `dynamicLinks` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/dynamic-links';
+ * import { firebase } from '@topher_pedersen/dynamic-links';
  *
  * // firebase.dynamicLinks().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `dynamic-links` package:
  *
  * ```js
- * import dynamicLinks from '@react-native-firebase/dynamic-links';
+ * import dynamicLinks from '@topher_pedersen/dynamic-links';
  *
  * // dynamicLinks().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/dynamic-links';
+ * import '@topher_pedersen/dynamic-links';
  *
  * // firebase.dynamicLinks().X
  * ```

@@ -15,8 +15,8 @@
  *
  */
 
-import { isNull, isObject, isString } from '@react-native-firebase/app/lib/common';
-import { NativeFirebaseError } from '@react-native-firebase/app/lib/internal';
+import { isNull, isObject, isString } from '@topher_pedersen/app/lib/common';
+import { NativeFirebaseError } from '@topher_pedersen/app/lib/internal';
 
 const SETTABLE_FIELDS = [
   'cacheControl',

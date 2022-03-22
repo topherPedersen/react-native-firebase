@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `appCheck` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/app-check';
+ * import { firebase } from '@topher_pedersen/app-check';
  *
  * // firebase.appCheck().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `appCheck` package:
  *
  * ```js
- * import appCheck from '@react-native-firebase/app-check';
+ * import appCheck from '@topher_pedersen/app-check';
  *
  * // appCheck().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/app-check';
+ * import '@topher_pedersen/app-check';
  *
  * // firebase.appCheck().X
  * ```

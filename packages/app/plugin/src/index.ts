@@ -8,7 +8,7 @@ import {
 import { withFirebaseAppDelegate, withIosGoogleServicesFile } from './ios';
 
 /**
- * A config plugin for configuring `@react-native-firebase/app`
+ * A config plugin for configuring `@topher_pedersen/app`
  */
 const withRnFirebaseApp: ConfigPlugin = config => {
   return withPlugins(config, [
@@ -23,5 +23,5 @@ const withRnFirebaseApp: ConfigPlugin = config => {
   ]);
 };
 
-const pak = require('@react-native-firebase/app/package.json');
+const pak = require('@topher_pedersen/app/package.json');
 export default createRunOncePlugin(withRnFirebaseApp, pak.name, pak.version);

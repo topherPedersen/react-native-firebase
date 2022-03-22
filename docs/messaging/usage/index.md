@@ -8,15 +8,15 @@ previous: /functions/writing-deploying-functions
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the messaging module
-yarn add @react-native-firebase/messaging
+yarn add @topher_pedersen/messaging
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -51,7 +51,7 @@ iOS prevents messages containing notification (or 'alert') payloads from being d
 This module provides a `requestPermission` method which triggers a native permission dialog requesting the user's permission:
 
 ```js
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 
 async function requestUserPermission() {
   const authStatus = await messaging().requestPermission();
@@ -138,7 +138,7 @@ each time a message is delivered'
 ```js
 import React, { useEffect } from 'react';
 import { Alert } from 'react-native';
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 
 function App() {
   useEffect(() => {
@@ -169,7 +169,7 @@ To setup a background handler, call the `setBackgroundMessageHandler` outside of
 ```jsx
 // index.js
 import { AppRegistry } from 'react-native';
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 import App from './App';
 
 // Register background handler
@@ -259,7 +259,7 @@ you can configure your `AppDelegate.m` file (see instructions below) to inject a
 ```jsx
 // index.js
 import { AppRegistry } from 'react-native';
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('Message handled in the background!', remoteMessage);
@@ -373,7 +373,7 @@ Once auto-registration is disabled you must manually call `registerDeviceForRemo
 early as possible in your application startup;
 
 ```js
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 
 async function registerAppWithFCM() {
   await messaging().registerDeviceForRemoteMessages();

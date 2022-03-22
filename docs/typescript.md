@@ -20,7 +20,7 @@ Lets go ahead and create a new `App.tsx` component:
 ```jsx
 import * as React from 'react';
 import { Text } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 function App() {
   const user = auth().currentUser;
@@ -60,7 +60,7 @@ We can easily access the types manually through the module though, for example:
 ```ts
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
+import auth, { FirebaseAuthTypes } from '@topher_pedersen/auth';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -85,7 +85,7 @@ of `<FirebaseAuthTypes.User | null>`. As we are unaware of the users authenticat
 which is a valid type for this state.
 
 The `onAuthStateChanged` listener triggers with a `User` or `null` parameter whenever the users authentication state changes. The
-`@react-native-firebase/auth` module provides TypeScript with these types automatically. As the returned types match
+`@topher_pedersen/auth` module provides TypeScript with these types automatically. As the returned types match
 the local state type, we are able to set the state immediately without any type check errors.
 
 Attempting to set `user` state to anything other than the `User` or `null` will throw a TypeScript error.

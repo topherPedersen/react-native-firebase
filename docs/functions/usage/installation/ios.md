@@ -16,7 +16,7 @@ Add the `RNFBFunctions` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   # ...
-  pod 'RNFBFunctions', :path => '../node_modules/@react-native-firebase/functions'
+  pod 'RNFBFunctions', :path => '../node_modules/@topher_pedersen/functions'
 end
 ```
 

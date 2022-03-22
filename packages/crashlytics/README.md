@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/crashlytics/detail"><img src="https://api.rnfirebase.io/coverage/crashlytics/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/crashlytics"><img src="https://img.shields.io/npm/dm/@react-native-firebase/crashlytics.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/crashlytics"><img src="https://img.shields.io/npm/v/@react-native-firebase/crashlytics.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/crashlytics"><img src="https://img.shields.io/npm/dm/@topher_pedersen/crashlytics.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/crashlytics"><img src="https://img.shields.io/npm/v/@topher_pedersen/crashlytics.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/npm/l/react-native-firebase.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
@@ -27,10 +27,10 @@ Firebase Crashlytics helps you track, prioritize, and fix stability issues that 
 
 ## Installation
 
-Requires `@react-native-firebase/app` to be installed.
+Requires `@topher_pedersen/app` to be installed.
 
 ```bash
-yarn add @react-native-firebase/crashlytics
+yarn add @topher_pedersen/crashlytics
 ```
 
 ## Documentation

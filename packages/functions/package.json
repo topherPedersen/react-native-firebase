@@ -27,7 +27,7 @@
     "@topher_pedersen/app": "16.0.0"
   },
   "devDependencies": {
-    "@react-native-firebase/private-tests-firebase-functions": "^0.0.1"
+    "@topher_pedersen/private-tests-firebase-functions": "^0.0.1"
   },
   "publishConfig": {
     "access": "public"

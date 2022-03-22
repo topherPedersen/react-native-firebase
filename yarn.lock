@@ -2907,19 +2907,19 @@
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
 
-"@react-native-firebase/app-types@6.7.2":
+"@topher_pedersen/app-types@6.7.2":
   version "6.7.2"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/app-types/-/app-types-6.7.2.tgz#d2e1530af5702e00578914b41468898c10d3289c"
+  resolved "https://registry.yarnpkg.com/@topher_pedersen/app-types/-/app-types-6.7.2.tgz#d2e1530af5702e00578914b41468898c10d3289c"
   integrity sha512-pIwc6e0ZINw6PJqNVsAxzOVJUDg6au2TdulY+ZOYQ11SPDs5I2n9likoGrElPmJjajT4s9h87uz/6PWP2k9PxQ==
 
-"@react-native-firebase/private-tests-firebase-functions@^0.0.1":
+"@topher_pedersen/private-tests-firebase-functions@^0.0.1":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/private-tests-firebase-functions/-/private-tests-firebase-functions-0.0.1.tgz#bbee243641e92a3d50925cb95e95dbcd28f7fc27"
+  resolved "https://registry.yarnpkg.com/@topher_pedersen/private-tests-firebase-functions/-/private-tests-firebase-functions-0.0.1.tgz#bbee243641e92a3d50925cb95e95dbcd28f7fc27"
   integrity sha512-hfz3J6tQlXG7PNfuJLbh486ulN8Q8o8tdiL5TJSXpnEdGZYTqYhka0DFOinU2sr4quxK5O4e6Rsh8tRRcUPrjA==
 
-"@react-native-firebase/private-tests-helpers@0.0.13":
+"@topher_pedersen/private-tests-helpers@0.0.13":
   version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/private-tests-helpers/-/private-tests-helpers-0.0.13.tgz#f9ec60074383be1ff603ac47ca99247918290407"
+  resolved "https://registry.yarnpkg.com/@topher_pedersen/private-tests-helpers/-/private-tests-helpers-0.0.13.tgz#f9ec60074383be1ff603ac47ca99247918290407"
   integrity sha512-8Orv2LyoZLg783oJh7JN2VOBQmQay9rOprA12wvxstCbJ0yREUzm26R2Bq/DSpHH1AVFStEYugO8sP3ZI0a3jQ==
   dependencies:
     axios "^0.19.0"

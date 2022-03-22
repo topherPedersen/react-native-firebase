@@ -8,15 +8,15 @@ previous: /messaging/server-integration
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the storage module
-yarn add @react-native-firebase/storage
+yarn add @topher_pedersen/storage
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -51,7 +51,7 @@ A reference is a local pointer to some file on your bucket. This can either be a
 which does not exist yet. To create a reference, use the `ref` method:
 
 ```js
-import storage from '@react-native-firebase/storage';
+import storage from '@topher_pedersen/storage';
 
 const reference = storage().ref('black-t-shirt-sm.png');
 ```
@@ -73,7 +73,7 @@ import React, { useEffect } from 'react';
 import { View, Button } from 'react-native';
 
 import { utils } from '@topher_pedersen/app';
-import storage from '@react-native-firebase/storage';
+import storage from '@topher_pedersen/storage';
 
 function App() {
   // create bucket storage reference to not yet existing image
@@ -129,7 +129,7 @@ files to a bucket, they are not automatically available for consumption via a HT
 need to call the `getDownloadURL` method on a reference:
 
 ```js
-import storage from '@react-native-firebase/storage';
+import storage from '@topher_pedersen/storage';
 
 const url = await storage().ref('images/profile-1.png').getDownloadURL();
 ```
@@ -142,7 +142,7 @@ If you wish to view a full list of the current files & directories within a part
 the `list` method. The results are however paginated, and if more results are available you can pass a page token into the request:
 
 ```js
-import storage from '@react-native-firebase/storage';
+import storage from '@topher_pedersen/storage';
 
 function listFilesAndDirectories(reference, pageToken) {
   return reference.list({ pageToken }).then(result => {
@@ -181,7 +181,7 @@ is passed to the `storage` instance. To switch buckets, provide the module with 
 Firebase Console, under Storage > Files.
 
 ```js
-import storage, { firebase } from '@react-native-firebase/storage';
+import storage, { firebase } from '@topher_pedersen/storage';
 
 const defaultStorageBucket = storage();
 const secondaryStorageBucket = firebase.app().storage('gs://my-secondary-bucket.appspot.com');

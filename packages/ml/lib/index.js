@@ -19,7 +19,7 @@ import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 import version from './version';
 
 const statics = {};
@@ -30,10 +30,10 @@ const nativeModuleName = 'RNFBMLModule';
 
 class FirebaseMLModule extends FirebaseModule {}
 
-// import { SDK_VERSION } from '@react-native-firebase/ml';
+// import { SDK_VERSION } from '@topher_pedersen/ml';
 export const SDK_VERSION = version;
 
-// import ML from '@react-native-firebase/ml';
+// import ML from '@topher_pedersen/ml';
 // ml().X(...);
 export default createModuleNamespace({
   statics,
@@ -46,10 +46,10 @@ export default createModuleNamespace({
   ModuleClass: FirebaseMLModule,
 });
 
-// import ml, { firebase } from '@react-native-firebase/ml';
+// import ml, { firebase } from '@topher_pedersen/ml';
 // ml().X(...);
 // firebase.ml().X(...);
 export const firebase = getFirebaseRoot();
 
 // e.g.
-// // import { MLCloudTextRecognizerModelType } from '@react-native-firebase/ml';
+// // import { MLCloudTextRecognizerModelType } from '@topher_pedersen/ml';

@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/functions/detail"><img src="https://api.rnfirebase.io/coverage/functions/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/functions"><img src="https://img.shields.io/npm/dm/@react-native-firebase/functions.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/functions"><img src="https://img.shields.io/npm/v/@react-native-firebase/functions.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/functions"><img src="https://img.shields.io/npm/dm/@topher_pedersen/functions.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/functions"><img src="https://img.shields.io/npm/v/@topher_pedersen/functions.svg?style=flat-square" alt="NPM version"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
 
@@ -28,10 +28,10 @@ and then add client logic to call the function from your app.
 
 ## Installation
 
-Requires `@react-native-firebase/app` to be installed.
+Requires `@topher_pedersen/app` to be installed.
 
 ```bash
-yarn add @react-native-firebase/functions
+yarn add @topher_pedersen/functions
 ```
 
 ## Documentation

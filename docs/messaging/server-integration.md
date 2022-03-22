@@ -35,9 +35,9 @@ device token (if using a different push notification provider, such as Amazon SN
 
 ```jsx
 import React, { useEffect } from 'react';
-import messaging from '@react-native-firebase/messaging';
-import auth from '@react-native-firebase/auth';
-import firestore from '@react-native-firebase/firestore';
+import messaging from '@topher_pedersen/messaging';
+import auth from '@topher_pedersen/auth';
+import firestore from '@topher_pedersen/firestore';
 import { Platform } from 'react-native';
 
 async function saveTokenToDatabase(token) {

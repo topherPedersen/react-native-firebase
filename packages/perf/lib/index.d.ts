@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `perf` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/perf';
+ * import { firebase } from '@topher_pedersen/perf';
  *
  * // firebase.perf().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `perf` package:
  *
  * ```js
- * import perf from '@react-native-firebase/perf';
+ * import perf from '@topher_pedersen/perf';
  *
  * // perf().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/perf';
+ * import '@topher_pedersen/perf';
  *
  * // firebase.perf().X
  * ```

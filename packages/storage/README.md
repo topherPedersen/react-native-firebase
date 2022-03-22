@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/storage/detail"><img src="https://api.rnfirebase.io/coverage/storage/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/storage"><img src="https://img.shields.io/npm/dm/@react-native-firebase/storage.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/storage"><img src="https://img.shields.io/npm/v/@react-native-firebase/storage.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/storage"><img src="https://img.shields.io/npm/dm/@topher_pedersen/storage.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/storage"><img src="https://img.shields.io/npm/v/@topher_pedersen/storage.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/npm/l/react-native-firebase.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
@@ -27,10 +27,10 @@ Cloud Storage for Firebase is a powerful, simple, and cost-effective object stor
 
 ## Installation
 
-Requires `@react-native-firebase/app` to be installed.
+Requires `@topher_pedersen/app` to be installed.
 
 ```bash
-yarn add @react-native-firebase/storage
+yarn add @topher_pedersen/storage
 ```
 
 ## Documentation

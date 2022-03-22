@@ -23,7 +23,7 @@ import {
   isObject,
   isString,
   isUndefined,
-} from '@react-native-firebase/app/lib/common';
+} from '@topher_pedersen/app/lib/common';
 
 export default function remoteMessageOptions(messagingSenderId, remoteMessage) {
   const out = {};

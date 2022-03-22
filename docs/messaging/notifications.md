@@ -112,7 +112,7 @@ we can set an initial route when the app is opened from a quit state, and push t
 
 ```jsx
 import React, { useState, useEffect } from 'react';
-import messaging from '@react-native-firebase/messaging';
+import messaging from '@topher_pedersen/messaging';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 

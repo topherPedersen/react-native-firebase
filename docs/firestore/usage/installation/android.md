@@ -14,8 +14,8 @@ The following steps are only required if you are using React Native without auto
 Add the following to your projects `/android/settings.gradle` file:
 
 ```groovy
-include ':@react-native-firebase_firestore'
-project(':@react-native-firebase_firestore').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/firestore/android')
+include ':@topher_pedersen_firestore'
+project(':@topher_pedersen_firestore').projectDir = new File(rootProject.projectDir, '../node_modules/@topher_pedersen/firestore/android')
 ```
 
 ## 2. Add Firestore to App Gradle Dependencies
@@ -26,7 +26,7 @@ Add the React Native Firebase module dependency to your `/android/app/build.grad
 // ..
 dependencies {
   // ..
-  implementation project(':@react-native-firebase_firestore')
+  implementation project(':@topher_pedersen_firestore')
 }
 ```
 

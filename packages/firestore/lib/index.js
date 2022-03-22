@@ -23,12 +23,12 @@ import {
   isString,
   isUndefined,
   isAndroid,
-} from '@react-native-firebase/app/lib/common';
+} from '@topher_pedersen/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
+} from '@topher_pedersen/app/lib/internal';
 import FirestoreCollectionReference from './FirestoreCollectionReference';
 import FirestoreDocumentReference from './FirestoreDocumentReference';
 import FirestorePath from './FirestorePath';
@@ -331,10 +331,10 @@ class FirebaseFirestoreModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/firestore';
+// import { SDK_VERSION } from '@topher_pedersen/firestore';
 export const SDK_VERSION = version;
 
-// import firestore from '@react-native-firebase/firestore';
+// import firestore from '@topher_pedersen/firestore';
 // firestore().X(...);
 export default createModuleNamespace({
   statics: FirestoreStatics,
@@ -347,7 +347,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseFirestoreModule,
 });
 
-// import firestore, { firebase } from '@react-native-firebase/firestore';
+// import firestore, { firebase } from '@topher_pedersen/firestore';
 // firestore().X(...);
 // firebase.firestore().X(...);
 export const firebase = getFirebaseRoot();

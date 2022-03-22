@@ -192,7 +192,7 @@ https://us-central1-rnfirebase-demo-23aa8.cloudfunctions.net/listProducts
 Once your function has been deployed you can now call it through the React Native Firebase Functions SDK in your application:
 
 ```js
-import { firebase } from '@react-native-firebase/functions';
+import { firebase } from '@topher_pedersen/functions';
 
 // ...
 

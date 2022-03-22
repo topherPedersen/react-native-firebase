@@ -8,15 +8,15 @@ previous: /crashlytics/crash-reports
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the database module
-yarn add @react-native-firebase/database
+yarn add @topher_pedersen/database
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install && cd ..
@@ -45,7 +45,7 @@ can be a specific property or sub-nodes.
 To create a [`Reference`](/reference/database/reference), call the `ref` method:
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 const reference = database().ref('/users/123');
 ```
@@ -53,7 +53,7 @@ const reference = database().ref('/users/123');
 NOTE: To get a reference to a database other than an 'us-central1' default database, you must pass the database URL. You can find your Realtime Database URL in the Realtime Database section of the Firebase console.
 
 ```js
-import { firebase } from '@react-native-firebase/database';
+import { firebase } from '@topher_pedersen/database';
 
 const reference = firebase
   .app()
@@ -73,7 +73,7 @@ The snapshot includes information such as whether the reference node exists, it'
 To read the value once, call the `once` method on a reference:
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 database()
   .ref('/users/123')
@@ -88,7 +88,7 @@ database()
 To setup an active listener to react to any changes to the node and it's children, call the `on` method with an event handler:
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 database()
   .ref('/users/123')
@@ -106,7 +106,7 @@ when the hook needs to unsubscribe itself:
 
 ```jsx
 import React, { useEffect } from 'react';
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 function User({ userId }) {
   useEffect(() => {
@@ -133,7 +133,7 @@ and speeds up your application.
 
 ```jsx
 import React, { useEffect } from 'react';
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 function User({ userId }) {
   useEffect(() => {
@@ -207,7 +207,7 @@ The `set` method on a [`Reference`](/reference/database/reference) overwrites al
 The value can be anything; a string, number, object etc:
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 database()
   .ref('/users/123')
@@ -226,7 +226,7 @@ Rather than overwriting all existing data, the `update` method provides the abil
 Firebase will automatically merge the data depending on what currently exists.
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 database()
   .ref('/users/123')
@@ -292,7 +292,7 @@ is executing, it will retry. This always ensures the value on the server is used
 To execute a new transaction, call the `transaction` method on a reference:
 
 ```js
-import database from '@react-native-firebase/database';
+import database from '@topher_pedersen/database';
 
 function onPostLike(postId) {
   const reference = database().ref(`/likes/${postId}`);
@@ -324,7 +324,7 @@ If the default installed Firebase instance needs to address a different database
 For example:
 
 ```js
-import { firebase } from '@react-native-firebase/database';
+import { firebase } from '@topher_pedersen/database';
 
 const database = firebase.app().database('https://path-to-database.firebaseio.com');
 
@@ -338,7 +338,7 @@ If you want to address a database from a different Firebase project, you will ne
 For example:
 
 ```js
-import database, { firebase } from '@react-native-firebase/database';
+import database, { firebase } from '@topher_pedersen/database';
 
 // create a secondary app
 const secondaryApp = await firebase.initalizeApp(credentials, config);

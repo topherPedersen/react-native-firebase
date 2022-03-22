@@ -8,15 +8,15 @@ previous: /app-distribution/usage
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app"
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app"
 module, view the [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the authentication module
-yarn add @react-native-firebase/auth
+yarn add @topher_pedersen/auth
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -50,7 +50,7 @@ render of our main application whilst the connection is established:
 ```jsx
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 function App() {
   // Set an initializing state whilst Firebase connects
@@ -110,7 +110,7 @@ allowing you to integrate with other services such as Analytics by providing a u
 Ensure the "Anonymous" sign-in provider is enabled on the [Firebase Console](https://console.firebase.google.com/project/_/authentication/providers).
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 auth()
   .signInAnonymously()
@@ -144,7 +144,7 @@ The `createUserWithEmailAndPassword` performs two operations; first creating the
 then signing them in.
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 auth()
   .createUserWithEmailAndPassword('jane.doe@example.com', 'SuperSecretPassword!')
@@ -179,7 +179,7 @@ The user's token should be used for authentication with your backend systems. Th
 If you'd like to sign the user out of their current authentication state, call the `signOut` method:
 
 ```js
-import auth from '@react-native-firebase/auth';
+import auth from '@topher_pedersen/auth';
 
 auth()
   .signOut()

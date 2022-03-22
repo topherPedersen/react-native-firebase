@@ -23,15 +23,15 @@ import {
   isOneOf,
   isString,
   isUndefined,
-} from '@react-native-firebase/app/lib/common';
-import { validateStruct, validateCompound } from '@react-native-firebase/app/lib/common/struct';
+} from '@topher_pedersen/app/lib/common';
+import { validateStruct, validateCompound } from '@topher_pedersen/app/lib/common/struct';
 
 import {
   createModuleNamespace,
   FirebaseModule,
   getFirebaseRoot,
-} from '@react-native-firebase/app/lib/internal';
-import { isBoolean } from '@react-native-firebase/app/lib/common';
+} from '@topher_pedersen/app/lib/internal';
+import { isBoolean } from '@topher_pedersen/app/lib/common';
 
 import version from './version';
 import * as structs from './structs';
@@ -678,10 +678,10 @@ class FirebaseAnalyticsModule extends FirebaseModule {
   }
 }
 
-// import { SDK_VERSION } from '@react-native-firebase/analytics';
+// import { SDK_VERSION } from '@topher_pedersen/analytics';
 export const SDK_VERSION = version;
 
-// import analytics from '@react-native-firebase/analytics';
+// import analytics from '@topher_pedersen/analytics';
 // analytics().logEvent(...);
 export default createModuleNamespace({
   statics,
@@ -694,7 +694,7 @@ export default createModuleNamespace({
   ModuleClass: FirebaseAnalyticsModule,
 });
 
-// import analytics, { firebase } from '@react-native-firebase/analytics';
+// import analytics, { firebase } from '@topher_pedersen/analytics';
 // analytics().logEvent(...);
 // firebase.analytics().logEvent(...);
 export const firebase = getFirebaseRoot();

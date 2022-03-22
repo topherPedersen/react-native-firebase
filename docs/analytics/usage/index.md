@@ -8,15 +8,15 @@ previous: /contributing
 
 # Installation
 
-This module requires that the `@react-native-firebase/app` module is already setup and installed. To install the "app" module, view the
+This module requires that the `@topher_pedersen/app` module is already setup and installed. To install the "app" module, view the
 [Getting Started](/) documentation.
 
 ```bash
 # Install & setup the app module
-yarn add @react-native-firebase/app
+yarn add @topher_pedersen/app
 
 # Install the analytics module
-yarn add @react-native-firebase/analytics
+yarn add @topher_pedersen/analytics
 
 # If you're developing your app using iOS, run this command
 cd ios/ && pod install
@@ -47,7 +47,7 @@ Below is an example showing how a custom event can be logged. Please be aware th
 ```jsx
 import react, { useEffect } from 'react';
 import { View, Button } from 'react-native';
-import analytics from '@react-native-firebase/analytics';
+import analytics from '@topher_pedersen/analytics';
 
 function App() {
   return (
@@ -80,7 +80,7 @@ Below is a sample of how to use one of the predefined methods the Analytics modu
 ```jsx
 import react, { useEffect } from 'react';
 import { View, Button } from 'react-native';
-import analytics from '@react-native-firebase/analytics';
+import analytics from '@topher_pedersen/analytics';
 
 function App() {
   return (
@@ -130,7 +130,7 @@ if FirebaseAnalytics.ConsentType.ANALYTICS_STORAGE has been set to FirebaseAnaly
 iOS if ConsentType.analyticsStorage has been set to ConsentStatus.denied.
 
 ```jsx
-import analytics from '@react-native-firebase/analytics';
+import analytics from '@topher_pedersen/analytics';
 // ...
 const appInstanceId = await analytics().getAppInstanceId();
 ```
@@ -177,7 +177,7 @@ on the `firebase.json` file at the root of your project directory.
 To re-enable analytics (e.g. once you have the users consent), call the `setAnalyticsCollectionEnabled` method:
 
 ```js
-import { firebase } from '@react-native-firebase/analytics';
+import { firebase } from '@topher_pedersen/analytics';
 // ...
 await firebase.analytics().setAnalyticsCollectionEnabled(true);
 ```

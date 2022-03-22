@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/database/detail"><img src="https://api.rnfirebase.io/coverage/database/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/database"><img src="https://img.shields.io/npm/dm/@react-native-firebase/database.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/database"><img src="https://img.shields.io/npm/v/@react-native-firebase/database.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/database"><img src="https://img.shields.io/npm/dm/@topher_pedersen/database.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/database"><img src="https://img.shields.io/npm/v/@topher_pedersen/database.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/npm/l/react-native-firebase.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
@@ -27,10 +27,10 @@ The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSO
 
 ## Installation
 
-Requires `@react-native-firebase/app` to be installed.
+Requires `@topher_pedersen/app` to be installed.
 
 ```bash
-yarn add @react-native-firebase/database
+yarn add @topher_pedersen/database
 ```
 
 ## Documentation

@@ -14,8 +14,8 @@ The following steps are only required if you are using React Native <= 0.59 or n
 Add the following to your projects `/android/settings.gradle` file:
 
 ```groovy
-include ':@react-native-firebase_crashlytics'
-project(':@react-native-firebase_crashlytics').projectDir = new File(rootProject.projectDir, './../node_modules/@react-native-firebase/crashlytics/android')
+include ':@topher_pedersen_crashlytics'
+project(':@topher_pedersen_crashlytics').projectDir = new File(rootProject.projectDir, './../node_modules/@topher_pedersen/crashlytics/android')
 ```
 
 ## 2. Update Gradle Dependencies
@@ -25,7 +25,7 @@ Add the React Native Firebase Crashlytics module dependency to your `/android/ap
 ```groovy
 dependencies {
   // ...
-  implementation project(path: ":@react-native-firebase_crashlytics")
+  implementation project(path: ":@topher_pedersen_crashlytics")
 }
 ```
 

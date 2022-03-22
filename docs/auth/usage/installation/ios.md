@@ -16,7 +16,7 @@ Add the `RNFBAuth` Pod to your projects `/ios/Podfile`:
 ```ruby
 target 'app' do
   #  ...
-  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
+  pod 'RNFBAuth', :path => '../node_modules/@topher_pedersen/auth'
 end
 ```
 

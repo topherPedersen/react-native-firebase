@@ -15,8 +15,8 @@ auto-linking.
 Add the following to your projects `/android/settings.gradle` file:
 
 ```groovy
-include ':@react-native-firebase_ml'
-project(':@react-native-firebase_ml').projectDir = new File(rootProject.projectDir, './../node_modules/@react-native-firebase/ml/android')
+include ':@topher_pedersen_ml'
+project(':@topher_pedersen_ml').projectDir = new File(rootProject.projectDir, './../node_modules/@topher_pedersen/ml/android')
 ```
 
 ## 2. Update Gradle Dependencies
@@ -27,7 +27,7 @@ Add the React Native Functions module dependency to your `/android/app/build.gra
 // ..
 dependencies {
   // ..
-  implementation project(path: ":@react-native-firebase_ml")
+  implementation project(path: ":@topher_pedersen_ml")
 }
 ```
 

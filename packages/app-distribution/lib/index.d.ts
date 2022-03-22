@@ -25,7 +25,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Access the firebase export from the `app-distribution` package:
  *
  * ```js
- * import { firebase } from '@react-native-firebase/app-distribution';
+ * import { firebase } from '@topher_pedersen/app-distribution';
  *
  * // firebase.appDistribution().X
  * ```
@@ -35,7 +35,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  * Using the default export from the `app-distribution` package:
  *
  * ```js
- * import appDistribution from '@react-native-firebase/app-distribution';
+ * import appDistribution from '@topher_pedersen/app-distribution';
  *
  * // appDistribution().X
  * ```
@@ -46,7 +46,7 @@ import { ReactNativeFirebase } from '@topher_pedersen/app';
  *
  * ```js
  * import firebase from '@topher_pedersen/app';
- * import '@react-native-firebase/app-distribution';
+ * import '@topher_pedersen/app-distribution';
  *
  * // firebase.appDistribution().X
  * ```

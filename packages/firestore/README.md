@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="https://api.rnfirebase.io/coverage/firestore/detail"><img src="https://api.rnfirebase.io/coverage/firestore/badge?style=flat-square" alt="Coverage"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/firestore"><img src="https://img.shields.io/npm/dm/@react-native-firebase/firestore.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/@react-native-firebase/firestore"><img src="https://img.shields.io/npm/v/@react-native-firebase/firestore.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/firestore"><img src="https://img.shields.io/npm/dm/@topher_pedersen/firestore.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@topher_pedersen/firestore"><img src="https://img.shields.io/npm/v/@topher_pedersen/firestore.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/npm/l/react-native-firebase.svg?style=flat-square" alt="License"></a>
   <a href="https://lerna.js.org/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square" alt="Maintained with Lerna"></a>
 </p>
@@ -27,10 +27,10 @@ Cloud Firestore is a NoSQL document database that lets you easily store, sync, a
 
 ## Installation
 
-Requires `@react-native-firebase/app` & `@react-native-firebase/auth` to be installed.
+Requires `@topher_pedersen/app` & `@topher_pedersen/auth` to be installed.
 
 ```bash
-yarn add @react-native-firebase/firestore
+yarn add @topher_pedersen/firestore
 ```
 
 ## Documentation

@@ -17,7 +17,7 @@ access to the current navigation state when a screen changes, allowing you to us
 method the Analytics library provides:
 
 ```jsx
-import analytics from '@react-native-firebase/analytics';
+import analytics from '@topher_pedersen/analytics';
 import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
@@ -60,7 +60,7 @@ for React Native apps. To manually track screens, you need to setup a `component
 [`logScreenView`](/reference/analytics#logScreenView) method the Analytics library provides:
 
 ```js
-import analytics from '@react-native-firebase/analytics';
+import analytics from '@topher_pedersen/analytics';
 import { Navigation } from 'react-native-navigation';
 
 Navigation.events().registerComponentDidAppearListener(async ({ componentName, componentType }) => {

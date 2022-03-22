@@ -22,8 +22,8 @@ Whenever the application opens, [write a new value](/database/usage#writing-data
 
 ```jsx
 import React, { useEffect } from 'react';
-import auth from '@react-native-firebase/auth';
-import database from '@react-native-firebase/database';
+import auth from '@topher_pedersen/auth';
+import database from '@topher_pedersen/database';
 
 function App() {
   useEffect(() => {
@@ -55,8 +55,8 @@ provides functionality to remove or set data whenever a client disconnects. Usin
 
 ```jsx
 import React, { useEffect } from 'react';
-import auth from '@react-native-firebase/auth';
-import database from '@react-native-firebase/database';
+import auth from '@topher_pedersen/auth';
+import database from '@topher_pedersen/database';
 
 function App() {
   useEffect(() => {
