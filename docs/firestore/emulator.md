@@ -28,7 +28,7 @@ You should see a `firestore-debug.log` file in the directory you ran the command
 You need to configure the following property as soon as possible in the startup of your application:
 
 ```jsx
-import '@react-native-firebase/app';
+import '@topher_pedersen/app';
 import firestore from '@react-native-firebase/firestore';
 
 // set the host and the port property to connect to the emulator

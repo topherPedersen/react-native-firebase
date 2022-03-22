@@ -72,7 +72,7 @@ library provides [Utils](/app/utils) to help identify device directories:
 import React, { useEffect } from 'react';
 import { View, Button } from 'react-native';
 
-import { utils } from '@react-native-firebase/app';
+import { utils } from '@topher_pedersen/app';
 import storage from '@react-native-firebase/storage';
 
 function App() {

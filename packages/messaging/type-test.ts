@@ -1,4 +1,4 @@
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import * as messaging from '@react-native-firebase/messaging';
 
 console.log(messaging.default().app);

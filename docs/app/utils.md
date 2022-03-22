@@ -17,7 +17,7 @@ which can be used.
 Access the `FilePath` static via utils:
 
 ```js
-import { utils } from '@react-native-firebase/app';
+import { utils } from '@topher_pedersen/app';
 
 console.log(utils.FilePath.PICTURES_DIRECTORY);
 ```
@@ -35,7 +35,7 @@ data collection. Such functionality can be carried out by taking advantage of th
 > Be aware, `isRunningInTestLab` is Android only property!
 
 ```js
-import { utils } from '@react-native-firebase/app';
+import { utils } from '@topher_pedersen/app';
 import analytics from '@react-native-firebase/analytics';
 
 async function bootstrap() {
@@ -50,7 +50,7 @@ async function bootstrap() {
 It is useful to know if the Android device has play services available, and what to do in response to certain use cases:
 
 ```js
-import { utils } from '@react-native-firebase/app';
+import { utils } from '@topher_pedersen/app';
 
 async function checkPlayServicesExample() {
   const { status, isAvailable, hasResolution, isUserResolvableError } =

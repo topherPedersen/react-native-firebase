@@ -37,7 +37,7 @@ The module exposes an `initializeApp` method which accepts arguments containing 
 apps:
 
 ```js
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 
 // Your secondary Firebase project credentials...
 const credentials = {
@@ -60,7 +60,7 @@ await firebase.initializeApp(credentials, config);
 Note that if you use multiple platforms, you will need to use the credentials relevant to that platform:
 
 ```js
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import { Platform } from 'react-native';
 
 // Your secondary Firebase project credentials for Android...
@@ -113,7 +113,7 @@ apps.forEach(app => {
 You can switch app instances at any time whilst developing by calling the `app` method with the name of the secondary app:
 
 ```js
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import '@react-native-firebase/auth';
 
 // Example using auth
@@ -123,7 +123,7 @@ firebase.app('SECONDARY_APP').auth().currentUser;
 Or pass the secondary app instance you created above directly to the desired module, for example:
 
 ```js
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import auth from '@react-native-firebase/auth';
 
 // create secondary app as described above

@@ -1,4 +1,4 @@
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import * as database from '@react-native-firebase/database';
 
 console.log(database.default().ref().parent);

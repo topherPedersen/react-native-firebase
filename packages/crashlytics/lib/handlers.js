@@ -15,7 +15,7 @@
  *
  */
 
-import { firebase } from '@react-native-firebase/app';
+import { firebase } from '@topher_pedersen/app';
 import { isError, once } from '@react-native-firebase/app/lib/common';
 import tracking from 'promise/setimmediate/rejection-tracking';
 import StackTrace from 'stacktrace-js';

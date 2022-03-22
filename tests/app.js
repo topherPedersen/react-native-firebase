@@ -16,7 +16,7 @@
  */
 
 import '@react-native-firebase/analytics';
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import NativeEventEmitter from '@react-native-firebase/app/lib/internal/RNFBNativeEventEmitter';
 import '@react-native-firebase/app/lib/utils';
 import '@react-native-firebase/app-check';

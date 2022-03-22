@@ -1,4 +1,4 @@
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import defaultExport, { firebase as firebaseFromModule } from '@react-native-firebase/app-distribution';
 
 // checks module exists at root

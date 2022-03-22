@@ -15,7 +15,7 @@
  *
  */
 
-import { ReactNativeFirebase } from '@react-native-firebase/app';
+import { ReactNativeFirebase } from '@topher_pedersen/app';
 
 /**
  * Firebase Crashlytics package for React Native.
@@ -39,7 +39,7 @@ import { ReactNativeFirebase } from '@react-native-firebase/app';
  * #### Example: Using the default export from the `app` package:
  *
  * ```js
- * import firebase from '@react-native-firebase/app';
+ * import firebase from '@topher_pedersen/app';
  * import '@react-native-firebase/crashlytics';
  *
  * // firebase.crashlytics().X
@@ -269,7 +269,7 @@ export default defaultExport;
 /**
  * Attach namespace to `firebase.` and `FirebaseApp.`.
  */
-declare module '@react-native-firebase/app' {
+declare module '@topher_pedersen/app' {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   namespace ReactNativeFirebase {
     import FirebaseModuleWithStatics = ReactNativeFirebase.FirebaseModuleWithStatics;

@@ -301,14 +301,14 @@ Find and replace all usages of the import with the new import:
 
 ```diff
 - import firebase from 'react-native-firebase';
-+ import firebase from '@react-native-firebase/app';
++ import firebase from '@topher_pedersen/app';
 ```
 
 We now need to import additional packages inside of an entry point file of our project, for example
 to import the Authentication module, add the following to your projects `/App.js` file (or entry file):
 
 ```js
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import '@react-native-firebase/auth';
 
 // App code

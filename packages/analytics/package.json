@@ -1,6 +1,6 @@
 {
   "name": "@topher_pedersen/analytics",
-  "version": "16.0.0",
+  "version": "17.0.0",
   "author": "Invertase <oss@invertase.io> (http://invertase.io)",
   "description": "React Native Firebase - The analytics module provides out of the box support with Google Analytics for Firebase. Integration with the Android & iOS allows for in-depth analytical insight reporting, such as device information, location, user actions and more.",
   "main": "lib/index.js",
@@ -22,7 +22,7 @@
     "analytics"
   ],
   "peerDependencies": {
-    "@topher_pedersen/app": "16.0.0"
+    "@topher_pedersen/app": "17.0.0"
   },
   "publishConfig": {
     "access": "public"

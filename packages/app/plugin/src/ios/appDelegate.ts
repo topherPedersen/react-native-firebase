@@ -32,7 +32,7 @@ export function modifyObjcAppDelegate(contents: string): string {
     !fallbackInvocationLineMatcher.test(contents)
   ) {
     WarningAggregator.addWarningIOS(
-      '@react-native-firebase/app',
+      '@topher_pedersen/app',
       'Unable to determine correct Firebase insertion point in AppDelegate.m. Skipping Firebase addition.',
     );
     return contents;

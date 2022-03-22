@@ -5,7 +5,7 @@ const { exit } = require('process');
 
 const packages = JSON.parse(execSync('npx lerna ls --json').toString('utf-8'));
 
-const firebaseAppPackageName = '@react-native-firebase/app';
+const firebaseAppPackageName = '@topher_pedersen/app';
 const lernaVersion = JSON.parse(readFileSync('lerna.json')).version;
 console.log(`Found lerna version: ${lernaVersion}`);
 

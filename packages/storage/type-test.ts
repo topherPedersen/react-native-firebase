@@ -1,4 +1,4 @@
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import * as storage from '@react-native-firebase/storage';
 // tslint:disable-next-line:no-duplicate-imports
 import storageExport from '@react-native-firebase/storage';

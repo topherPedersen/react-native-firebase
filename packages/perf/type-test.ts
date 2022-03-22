@@ -1,4 +1,4 @@
-import firebase from '@react-native-firebase/app';
+import firebase from '@topher_pedersen/app';
 import * as perf from '@react-native-firebase/perf';
 
 console.log(perf.default().app);
